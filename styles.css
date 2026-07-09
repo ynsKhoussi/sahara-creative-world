@@ -109,13 +109,42 @@ section, [id] { scroll-margin-top: 6rem; }
   padding: 0.6rem 1.25rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
+.nav-brand { display: inline-flex; }
+
 .nav-brand img {
-  border-radius: 50%;
+  border-radius: 6px;
+}
+
+/* Sélecteur de langue : masqué sans JS (il serait inopérant) */
+.lang-toggle { display: none; }
+
+html.js .lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem 0.85rem;
+  background: transparent;
+  color: var(--or-vif);
+  border: 2px solid var(--or-vif);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  background: var(--or-vif);
+  color: var(--noir);
 }
 
 .nav-links {
@@ -152,6 +181,9 @@ section, [id] { scroll-margin-top: 6rem; }
 .nav-links a:hover { color: var(--or-clair); }
 .nav-links a:hover::after,
 .nav-links a:focus-visible::after { transform: scaleX(1); }
+
+/* Sans JS : pas de sélecteur de langue, les liens se calent à droite */
+html:not(.js) .nav-links { margin-left: auto; }
 
 .nav-toggle {
   display: none;
@@ -620,6 +652,10 @@ main a:not(.btn) { color: var(--or-fonce); }
 @media (max-width: 47.99rem) {
 
   .nav-toggle { display: inline-flex; }
+
+  /* Sans JS, le bouton Menu serait inopérant : liens affichés en permanence */
+  html:not(.js) .nav-toggle { display: none; }
+  html:not(.js) .nav-links { display: flex; }
 
   .nav-links {
     display: none;

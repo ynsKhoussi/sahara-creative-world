@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sahara Creative World — Agence créative &amp; technologique à Agadir</title>
-  <meta name="description" content="Sahara Creative World (SCW) : agence multidisciplinaire à Agadir, Maroc. Production audiovisuelle, tech &amp; digital, marketing, événementiel, design et négoce international.">
+  <title>Sahara Creative World — Creative &amp; Technology Agency in Agadir</title>
+  <meta name="description" content="Sahara Creative World (SCW): a multidisciplinary agency in Agadir, Morocco. Audiovisual production, tech &amp; digital, marketing, live events, design and international trade.">
   <link rel="icon" href="assets/logo/scw-logo-badge.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,24 +13,28 @@
 </head>
 <body>
 
-  <!-- Lien d'évitement : premier élément focalisable de la page (WCAG 2.4.1) -->
-  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <!-- Skip link: first focusable element on the page (WCAG 2.4.1) -->
+  <a class="skip-link" href="#contenu" data-i18n="skip">Skip to main content</a>
 
-  <header class="site-header" id="haut">
-    <nav class="site-nav" aria-label="Navigation principale">
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation" data-i18n-aria-label="nav.label">
       <a class="nav-brand" href="#haut">
-        <img src="assets/logo/scw-logo-badge.jpg" alt="Sahara Creative World — retour à l'accueil" width="48" height="48">
+        <img src="assets/logo/scw-logo-mark.jpg" alt="Sahara Creative World — back to home" data-i18n-alt="nav.logoAlt" width="52" height="52">
       </a>
+      <!-- Language toggle: hidden without JS (it would be inert), shown by html.js.
+           Its visible text names the language it switches TO; aria-label and lang
+           attribute are kept in that target language (WCAG 2.5.3, 3.1.2). -->
+      <button class="lang-toggle" type="button" aria-label="Passer en français" lang="fr">FR</button>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
         <span class="nav-toggle-bars" aria-hidden="true"></span>
-        Menu
+        <span data-i18n="nav.menu">Menu</span>
       </button>
       <ul class="nav-links" id="menu-principal">
-        <li><a href="#haut" aria-current="page">Accueil</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#a-propos">À propos</a></li>
-        <li><a href="#realisations">Réalisations</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#haut" aria-current="page" data-i18n="nav.accueil">Home</a></li>
+        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="#a-propos" data-i18n="nav.apropos">About</a></li>
+        <li><a href="#realisations" data-i18n="nav.realisations">Our work</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -38,18 +42,21 @@
   <main id="contenu">
 
     <!-- ============ HERO ============ -->
-    <section class="hero" aria-labelledby="hero-titre">
+    <!-- id="haut" lives here, not on the sticky header: a stuck sticky element
+         is always "in view", so browsers refuse to scroll to it. Scrolling to
+         the hero clamps to the very top of the page (scroll-margin included). -->
+    <section class="hero" id="haut" aria-labelledby="hero-titre">
       <div class="hero-inner">
-        <p class="hero-kicker">Agence créative &amp; technologique — Agadir, Maroc</p>
+        <p class="hero-kicker" data-i18n="hero.kicker">Creative &amp; technology agency — Agadir, Morocco</p>
         <h1 id="hero-titre">
-          <span class="hero-line">Créer.</span>
-          <span class="hero-line">Produire.</span>
-          <span class="hero-line hero-line-gold">Faire rayonner.</span>
+          <span class="hero-line" data-i18n="hero.l1">Create.</span>
+          <span class="hero-line" data-i18n="hero.l2">Produce.</span>
+          <span class="hero-line hero-line-gold" data-i18n="hero.l3">Amplify.</span>
         </h1>
-        <p class="hero-desc">Du plateau de tournage au cloud, Sahara Creative World réunit sous un même toit la production audiovisuelle, la technologie et la communication.</p>
+        <p class="hero-desc" data-i18n="hero.desc">From film set to cloud, Sahara Creative World brings audiovisual production, technology and communication together under one roof.</p>
         <div class="hero-actions">
-          <a class="btn btn-gold" href="#contact">Discutons de votre projet</a>
-          <a class="btn btn-outline" href="#services">Découvrir nos services</a>
+          <a class="btn btn-gold" href="#contact" data-i18n="hero.cta1">Let's talk about your project</a>
+          <a class="btn btn-outline" href="#services" data-i18n="hero.cta2">Explore our services</a>
         </div>
       </div>
     </section>
@@ -57,101 +64,101 @@
     <!-- ============ SERVICES ============ -->
     <section class="services" id="services" aria-labelledby="services-titre">
       <div class="section-head reveal">
-        <p class="section-kicker">Ce que nous faisons</p>
-        <h2 id="services-titre">Six pôles, une seule exigence&nbsp;: l'excellence</h2>
+        <p class="section-kicker" data-i18n="services.kicker">What we do</p>
+        <h2 id="services-titre" data-i18n="services.titre">Six divisions, one standard: excellence</h2>
       </div>
 
       <div class="bento">
 
         <article class="tile tile-photo tile-audiovisuel reveal">
           <div class="tile-content">
-            <h3>Audiovisuel &amp; production</h3>
-            <p>Cinéma, VR/AR, motion design, podcast, postproduction — des histoires taillées pour l'écran, tous les écrans.</p>
+            <h3 data-i18n="services.av.titre">Audiovisual &amp; production</h3>
+            <p data-i18n="services.av.desc">Film, VR/AR, motion design, podcast, post-production — stories crafted for the screen, every screen.</p>
           </div>
         </article>
 
         <article class="tile tile-gold reveal">
           <div class="tile-content">
-            <h3>Marketing &amp; communication</h3>
-            <p>SEO/SEA, réseaux sociaux, marketing d'influence — une visibilité qui se mesure.</p>
+            <h3 data-i18n="services.mkt.titre">Marketing &amp; communication</h3>
+            <p data-i18n="services.mkt.desc">SEO/SEA, social media, influencer marketing — visibility you can measure.</p>
           </div>
         </article>
 
         <article class="tile tile-photo tile-tech reveal">
           <div class="tile-content">
-            <h3>Tech &amp; digital</h3>
-            <p>Développement logiciel, CI/CD, cloud et intelligence artificielle — des produits robustes, livrés en continu.</p>
+            <h3 data-i18n="services.tech.titre">Tech &amp; digital</h3>
+            <p data-i18n="services.tech.desc">Software development, CI/CD, cloud and artificial intelligence — robust products, delivered continuously.</p>
           </div>
         </article>
 
         <article class="tile tile-photo tile-event reveal">
           <div class="tile-content">
-            <h3>Événementiel &amp; régie live</h3>
-            <p>Conférences, sonorisation, éclairage, écrans LED — la maîtrise technique au service du direct.</p>
+            <h3 data-i18n="services.event.titre">Events &amp; live production</h3>
+            <p data-i18n="services.event.desc">Conferences, sound, lighting, LED screens — technical mastery in service of the live moment.</p>
           </div>
         </article>
 
         <article class="tile tile-photo tile-design reveal">
           <div class="tile-content">
-            <h3>Créativité &amp; design</h3>
-            <p>Photographie, graphisme, architecture intérieure — l'image juste, jusque dans l'espace.</p>
+            <h3 data-i18n="services.design.titre">Creativity &amp; design</h3>
+            <p data-i18n="services.design.desc">Photography, graphic design, interior architecture — the right image, all the way into physical space.</p>
           </div>
         </article>
 
         <article class="tile tile-noir reveal">
           <div class="tile-content">
-            <h3>Négoce &amp; marchés publics</h3>
-            <p>Négoce international et appels d'offres — un partenaire fiable, du sourcing à la livraison.</p>
+            <h3 data-i18n="services.negoce.titre">Trade &amp; public procurement</h3>
+            <p data-i18n="services.negoce.desc">International trade and public tenders — a reliable partner from sourcing to delivery.</p>
           </div>
         </article>
 
       </div>
     </section>
 
-    <!-- ============ À PROPOS ============ -->
+    <!-- ============ ABOUT ============ -->
     <section class="apropos" id="a-propos" aria-labelledby="apropos-titre">
       <div class="apropos-grid">
         <div class="apropos-text reveal">
-          <p class="section-kicker">Qui sommes-nous</p>
-          <h2 id="apropos-titre">Née à Agadir, tournée vers le monde</h2>
-          <p>Sahara Creative World est une agence multidisciplinaire installée à Agadir, au cœur du Souss. SARL à associé unique, elle a été pensée dès le départ comme un écosystème&nbsp;: un lieu où un film, une plateforme web, une campagne et un événement peuvent naître de la même conversation.</p>
-          <p>Cette polyvalence n'est pas une dispersion — c'est notre méthode. Parce que nos réalisateurs parlent aux développeurs et nos designers aux régisseurs, vos projets gagnent en cohérence ce qu'ils perdent habituellement entre plusieurs prestataires.</p>
-          <p>De la production cinématographique au négoce international, en passant par le cloud et la lumière d'une scène, nous cultivons une seule ambition&nbsp;: faire d'Agadir un point de départ, jamais une limite.</p>
+          <p class="section-kicker" data-i18n="apropos.kicker">Who we are</p>
+          <h2 id="apropos-titre" data-i18n="apropos.titre">Born in Agadir, facing the world</h2>
+          <p data-i18n="apropos.p1">Sahara Creative World is a multidisciplinary agency based in Agadir, in the heart of the Souss region. A single-shareholder limited company (SARL AU), it was designed from day one as an ecosystem: a place where a film, a web platform, a campaign and an event can all grow out of the same conversation.</p>
+          <p data-i18n="apropos.p2">This versatility is not a lack of focus — it is our method. Because our directors talk to our developers and our designers to our stage crews, your projects gain the coherence they usually lose between multiple vendors.</p>
+          <p data-i18n="apropos.p3">From film production to international trade, by way of the cloud and the light of a stage, we hold on to a single ambition: to make Agadir a starting point, never a limit.</p>
         </div>
         <div class="apropos-media reveal">
-          <img src="assets/images/tours-affaires.jpg" alt="Contre-plongée sur des tours de bureaux modernes se détachant sur un ciel bleu, symbole d'ambition internationale.">
+          <img src="assets/images/tours-affaires.jpg" alt="Low-angle view of modern office towers against a blue sky, a symbol of international ambition." data-i18n-alt="apropos.imgAlt">
         </div>
       </div>
     </section>
 
-    <!-- ============ RÉALISATIONS ============ -->
+    <!-- ============ OUR WORK ============ -->
     <!--
-      SECTION PLACEHOLDER — contenu d'attente.
-      Les trois cartes ci-dessous sont des exemples de structure destinés à être
-      remplacés par de vraies études de cas (visuel, client, résultats) dès que
-      les premiers projets documentés de SCW seront disponibles.
+      PLACEHOLDER SECTION — holding content.
+      The three cards below are structural examples meant to be replaced by
+      real case studies (visual, client, results) as soon as SCW's first
+      documented projects are available.
     -->
     <section class="realisations" id="realisations" aria-labelledby="realisations-titre">
       <div class="section-head section-head-dark reveal">
-        <p class="section-kicker">Nos travaux</p>
-        <h2 id="realisations-titre">Réalisations</h2>
-        <p class="section-sub">Nos premières études de cas arrivent bientôt. Voici comment elles vivront ici.</p>
+        <p class="section-kicker" data-i18n="real.kicker">Our projects</p>
+        <h2 id="realisations-titre" data-i18n="real.titre">Our work</h2>
+        <p class="section-sub" data-i18n="real.sub">Our first case studies are on their way. Here is how they will live here.</p>
       </div>
       <ul class="cards">
         <li class="card reveal">
-          <div class="card-media" aria-hidden="true"><span class="card-badge">À venir</span></div>
-          <h3>Étude de cas — Audiovisuel</h3>
-          <p>Production complète, du script à la postproduction.</p>
+          <div class="card-media" aria-hidden="true"><span class="card-badge" data-i18n="real.badge">Coming soon</span></div>
+          <h3 data-i18n="real.c1.titre">Case study — Audiovisual</h3>
+          <p data-i18n="real.c1.desc">Full production, from script to post-production.</p>
         </li>
         <li class="card reveal">
-          <div class="card-media" aria-hidden="true"><span class="card-badge">À venir</span></div>
-          <h3>Étude de cas — Digital</h3>
-          <p>Plateforme web déployée en continu sur le cloud.</p>
+          <div class="card-media" aria-hidden="true"><span class="card-badge" data-i18n="real.badge2">Coming soon</span></div>
+          <h3 data-i18n="real.c2.titre">Case study — Digital</h3>
+          <p data-i18n="real.c2.desc">A web platform continuously deployed to the cloud.</p>
         </li>
         <li class="card reveal">
-          <div class="card-media" aria-hidden="true"><span class="card-badge">À venir</span></div>
-          <h3>Étude de cas — Événementiel</h3>
-          <p>Régie technique complète d'une conférence.</p>
+          <div class="card-media" aria-hidden="true"><span class="card-badge" data-i18n="real.badge3">Coming soon</span></div>
+          <h3 data-i18n="real.c3.titre">Case study — Live events</h3>
+          <p data-i18n="real.c3.desc">Full technical production for a conference.</p>
         </li>
       </ul>
     </section>
@@ -160,38 +167,38 @@
     <section class="contact" id="contact" aria-labelledby="contact-titre">
       <div class="contact-grid">
         <div class="contact-intro reveal">
-          <p class="section-kicker">Parlons-en</p>
-          <h2 id="contact-titre">Un projet en tête&nbsp;?</h2>
-          <p>Racontez-nous votre idée — un membre de l'équipe vous répond sous 48&nbsp;heures ouvrées.</p>
+          <p class="section-kicker" data-i18n="contact.kicker">Let's talk</p>
+          <h2 id="contact-titre" data-i18n="contact.titre">Have a project in mind?</h2>
+          <p data-i18n="contact.desc">Tell us your idea — a member of the team will get back to you within 48 business hours.</p>
         </div>
 
         <!--
-          FORMULAIRE STATIQUE — la validation est gérée côté client (script.js).
-          Brancher l'attribut action sur un backend ou un service de formulaire
-          avant la mise en production.
+          STATIC FORM — validation handled client-side (script.js).
+          Wire the action attribute to a backend or form service
+          before going to production.
         -->
         <form class="contact-form reveal" action="#" method="post" novalidate>
-          <p class="form-hint" id="form-obligatoire">Tous les champs sont obligatoires.</p>
+          <p class="form-hint" id="form-obligatoire" data-i18n="form.hint">All fields are required.</p>
 
           <div class="form-field">
-            <label for="champ-nom">Nom complet</label>
+            <label for="champ-nom" data-i18n="form.nom">Full name</label>
             <input type="text" id="champ-nom" name="nom" autocomplete="name" required aria-required="true">
             <p class="form-error" id="erreur-nom"></p>
           </div>
 
           <div class="form-field">
-            <label for="champ-email">Adresse e-mail</label>
+            <label for="champ-email" data-i18n="form.email">Email address</label>
             <input type="email" id="champ-email" name="email" autocomplete="email" required aria-required="true">
             <p class="form-error" id="erreur-email"></p>
           </div>
 
           <div class="form-field">
-            <label for="champ-message">Votre message</label>
+            <label for="champ-message" data-i18n="form.message">Your message</label>
             <textarea id="champ-message" name="message" rows="6" required aria-required="true"></textarea>
             <p class="form-error" id="erreur-message"></p>
           </div>
 
-          <button class="btn btn-gold btn-submit" type="submit">Envoyer le message</button>
+          <button class="btn btn-gold btn-submit" type="submit" data-i18n="form.envoyer">Send message</button>
 
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
@@ -204,28 +211,28 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/logo/scw-logo-wide.jpg" alt="Sahara Creative World" width="220" height="124">
-        <p>Agence créative et technologique multidisciplinaire.</p>
+        <p data-i18n="footer.desc">A multidisciplinary creative and technology agency.</p>
       </div>
       <div class="footer-infos">
-        <h2>Coordonnées</h2>
+        <h2 data-i18n="footer.coordonnees">Contact details</h2>
         <address>
           Sahara Creative World — SARL AU<br>
-          Agadir, Maroc<br>
+          <span data-i18n="footer.ville">Agadir, Morocco</span><br>
           <a href="mailto:contact@saharacreativeworld.ma">contact@saharacreativeworld.ma</a>
         </address>
       </div>
       <div class="footer-nav">
-        <h2>Navigation</h2>
+        <h2 data-i18n="footer.navigation">Navigation</h2>
         <ul>
-          <li><a href="#haut">Accueil</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#a-propos">À propos</a></li>
-          <li><a href="#realisations">Réalisations</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#haut" data-i18n="footer.accueil">Home</a></li>
+          <li><a href="#services" data-i18n="footer.services">Services</a></li>
+          <li><a href="#a-propos" data-i18n="footer.apropos">About</a></li>
+          <li><a href="#realisations" data-i18n="footer.realisations">Our work</a></li>
+          <li><a href="#contact" data-i18n="footer.contact">Contact</a></li>
         </ul>
       </div>
     </div>
-    <p class="footer-legal">© 2026 Sahara Creative World. Tous droits réservés.</p>
+    <p class="footer-legal" data-i18n="footer.legal">© 2026 Sahara Creative World. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
