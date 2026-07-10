@@ -229,6 +229,26 @@ html:not(.js) .nav-links { margin-left: auto; }
 .hero-inner {
   max-width: var(--largeur-max);
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center;
+}
+
+/* Jumbotron : lockup complet en colonne droite (au-dessus du texte en mobile) */
+.hero-logo {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  justify-self: end;
+  filter: drop-shadow(0 14px 38px rgba(0, 0, 0, 0.55));
+}
+
+.hero-copy {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .hero-kicker {
@@ -241,7 +261,9 @@ html:not(.js) .nav-links { margin-left: auto; }
 }
 
 .hero h1 {
-  font-size: clamp(1.8rem, 7.5vw + 0.35rem, 6.5rem);
+  /* Dimensionné pour la colonne texte (7/12) du jumbotron : « PRODUIRE. »
+     doit tenir sur une seule ligne jusqu'à 320 px de large. */
+  font-size: clamp(1.8rem, 4vw + 0.35rem, 4rem);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.01em;
@@ -641,6 +663,16 @@ main a:not(.btn) { color: var(--or-fonce); }
 
   .tile-photo::before { transition: transform 0.5s ease; }
   .tile-photo:hover::before { transform: scale(1.05); }
+
+  /* Entrée douce du lockup au chargement (une seule fois, < 1 s) */
+  html.js .hero-logo {
+    animation: hero-logo-entree 0.8s ease both;
+  }
+
+  @keyframes hero-logo-entree {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: none; }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -681,6 +713,18 @@ main a:not(.btn) { color: var(--or-fonce); }
   .tile { min-height: 14rem; }
 
   .apropos-grid, .contact-grid { grid-template-columns: 1fr; }
+
+  .hero-inner { grid-template-columns: 1fr; }
+
+  .hero-logo {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    max-width: min(70vw, 17rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-copy { grid-column: 1; grid-row: 2; }
 
   .hero-actions .btn { width: 100%; text-align: center; }
 }

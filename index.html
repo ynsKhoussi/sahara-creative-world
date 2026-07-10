@@ -19,7 +19,7 @@
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation" data-i18n-aria-label="nav.label">
       <a class="nav-brand" href="#haut">
-        <img src="assets/logo/scw-logo-mark.jpg" alt="Sahara Creative World — back to home" data-i18n-alt="nav.logoAlt" width="52" height="52">
+        <img src="assets/logo/scw-logo-mark.png" alt="Sahara Creative World — back to home" data-i18n-alt="nav.logoAlt" width="52" height="52">
       </a>
       <!-- Language toggle: hidden without JS (it would be inert), shown by html.js.
            Its visible text names the language it switches TO; aria-label and lang
@@ -47,16 +47,21 @@
          the hero clamps to the very top of the page (scroll-margin included). -->
     <section class="hero" id="haut" aria-labelledby="hero-titre">
       <div class="hero-inner">
-        <p class="hero-kicker" data-i18n="hero.kicker">Creative &amp; technology agency — Agadir, Morocco</p>
-        <h1 id="hero-titre">
-          <span class="hero-line" data-i18n="hero.l1">Create.</span>
-          <span class="hero-line" data-i18n="hero.l2">Produce.</span>
-          <span class="hero-line hero-line-gold" data-i18n="hero.l3">Amplify.</span>
-        </h1>
-        <p class="hero-desc" data-i18n="hero.desc">From film set to cloud, Sahara Creative World brings audiovisual production, technology and communication together under one roof.</p>
-        <div class="hero-actions">
-          <a class="btn btn-gold" href="#contact" data-i18n="hero.cta1">Let's talk about your project</a>
-          <a class="btn btn-outline" href="#services" data-i18n="hero.cta2">Explore our services</a>
+        <!-- Lockup complet en PNG transparent : le nom de la marque est dans
+             l'alt ; l'exception logo de WCAG 1.4.5 s'applique au texte gravé. -->
+        <img class="hero-logo" src="assets/logo/scw-logo-full.png" alt="Sahara Creative World" width="997" height="366">
+        <div class="hero-copy">
+          <p class="hero-kicker" data-i18n="hero.kicker">Creative &amp; technology agency — Agadir, Morocco</p>
+          <h1 id="hero-titre">
+            <span class="hero-line" data-i18n="hero.l1">Create.</span>
+            <span class="hero-line" data-i18n="hero.l2">Produce.</span>
+            <span class="hero-line hero-line-gold" data-i18n="hero.l3">Amplify.</span>
+          </h1>
+          <p class="hero-desc" data-i18n="hero.desc">From film set to cloud, Sahara Creative World brings audiovisual production, technology and communication together under one roof.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#contact" data-i18n="hero.cta1">Let's talk about your project</a>
+            <a class="btn btn-outline" href="#services" data-i18n="hero.cta2">Explore our services</a>
+          </div>
         </div>
       </div>
     </section>
@@ -210,7 +215,7 @@
   <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="assets/logo/scw-logo-wide.jpg" alt="Sahara Creative World" width="220" height="124">
+        <img src="assets/logo/scw-logo-full.png" alt="Sahara Creative World" width="220" height="81">
         <p data-i18n="footer.desc">A multidisciplinary creative and technology agency.</p>
       </div>
       <div class="footer-infos">
