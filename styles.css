@@ -223,32 +223,26 @@ html:not(.js) .nav-links { margin-left: auto; }
     linear-gradient(180deg, rgba(17, 17, 17, 0.86) 0%, rgba(17, 17, 17, 0.8) 55%, rgba(17, 17, 17, 0.92) 100%),
     url("assets/images/regie-live-projecteurs.jpg") center 30% / cover no-repeat;
   color: var(--blanc);
-  padding: clamp(5rem, 14vh, 9rem) 1.25rem clamp(5rem, 13vh, 8rem);
+  padding: clamp(2.5rem, 6vh, 4rem) 1.25rem clamp(5rem, 13vh, 8rem);
 }
 
+/* Jumbotron centré : le lockup complet trône en haut du héros,
+   le texte s'aligne au centre sous lui. */
 .hero-inner {
   max-width: var(--largeur-max);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  gap: clamp(1.5rem, 4vw, 4rem);
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-/* Jumbotron : lockup complet en colonne droite (au-dessus du texte en mobile) */
 .hero-logo {
-  grid-column: 2;
-  grid-row: 1;
   width: 100%;
-  max-width: 30rem;
+  max-width: min(40rem, 90%);
   height: auto;
-  justify-self: end;
+  margin-bottom: clamp(1.75rem, 4.5vh, 3rem);
   filter: drop-shadow(0 14px 38px rgba(0, 0, 0, 0.55));
-}
-
-.hero-copy {
-  grid-column: 1;
-  grid-row: 1;
 }
 
 .hero-kicker {
@@ -261,9 +255,9 @@ html:not(.js) .nav-links { margin-left: auto; }
 }
 
 .hero h1 {
-  /* Dimensionné pour la colonne texte (7/12) du jumbotron : « PRODUIRE. »
-     doit tenir sur une seule ligne jusqu'à 320 px de large. */
-  font-size: clamp(1.8rem, 4vw + 0.35rem, 4rem);
+  /* « PRODUIRE. » (9 glyphes Syne ExtraBold ≈ 1.08 em chacun) doit tenir
+     sur une seule ligne jusqu'à 320 px de large. */
+  font-size: clamp(1.8rem, 5.5vw + 0.3rem, 5rem);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.01em;
@@ -277,13 +271,14 @@ html:not(.js) .nav-links { margin-left: auto; }
   max-width: 34em;
   font-size: clamp(1.05rem, 2vw, 1.3rem);
   color: #E9E4DA;
-  margin-bottom: 2.2rem;
+  margin: 0 auto 2.2rem;
 }
 
 .hero-actions {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* ---------- Boutons ---------- */
@@ -367,12 +362,13 @@ html:not(.js) .nav-links { margin-left: auto; }
 
 .tile { border-radius: 12px; overflow: hidden; position: relative; }
 
-/* Disposition asymétrique */
+/* Disposition asymétrique (4 tuiles) :
+   [ audiovisuel 4×2 ][ or 2×1   ]
+   [                  ][ tech 2×1 ]
+   [ noir 6×1                     ] */
 .tile-audiovisuel { grid-column: span 4; grid-row: span 2; }
 .tile-gold        { grid-column: span 2; }
-.tile-tech        { grid-column: span 2; grid-row: span 2; }
-.tile-event       { grid-column: span 3; }
-.tile-design      { grid-column: span 3; }
+.tile-tech        { grid-column: span 2; }
 .tile-noir        { grid-column: span 6; }
 
 .tile-content {
@@ -417,8 +413,6 @@ html:not(.js) .nav-links { margin-left: auto; }
 
 .tile-audiovisuel::before { background-image: url("assets/images/plateau-tournage.jpg"); }
 .tile-tech::before        { background-image: url("assets/images/dev-code-ecrans.jpg"); }
-.tile-event::before       { background-image: url("assets/images/regie-live-projecteurs.jpg"); background-position: center 70%; }
-.tile-design::before      { background-image: url("assets/images/studio-photo.jpg"); }
 
 .tile-photo h3 { color: var(--or-vif); }
 
@@ -704,8 +698,7 @@ main a:not(.btn) { color: var(--or-fonce); }
 
   .bento { grid-template-columns: 1fr; }
 
-  .tile-audiovisuel, .tile-gold, .tile-tech,
-  .tile-event, .tile-design, .tile-noir {
+  .tile-audiovisuel, .tile-gold, .tile-tech, .tile-noir {
     grid-column: auto;
     grid-row: auto;
   }
@@ -714,17 +707,10 @@ main a:not(.btn) { color: var(--or-fonce); }
 
   .apropos-grid, .contact-grid { grid-template-columns: 1fr; }
 
-  .hero-inner { grid-template-columns: 1fr; }
-
   .hero-logo {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: start;
-    max-width: min(70vw, 17rem);
-    margin-bottom: 1.5rem;
+    max-width: min(84vw, 20rem);
+    margin-bottom: 1.75rem;
   }
-
-  .hero-copy { grid-column: 1; grid-row: 2; }
 
   .hero-actions .btn { width: 100%; text-align: center; }
 }

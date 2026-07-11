@@ -22,8 +22,8 @@
       fr: "Sahara Creative World — Agence créative & technologique à Agadir"
     },
     "meta.description": {
-      en: "Sahara Creative World (SCW): a multidisciplinary agency in Agadir, Morocco. Audiovisual production, tech & digital, marketing, live events, design and international trade.",
-      fr: "Sahara Creative World (SCW) : agence multidisciplinaire à Agadir, Maroc. Production audiovisuelle, tech & digital, marketing, événementiel, design et négoce international."
+      en: "Sahara Creative World (SCW): a multidisciplinary agency in Agadir, Morocco. Audiovisual production, tech & digital, marketing and international trade.",
+      fr: "Sahara Creative World (SCW) : agence multidisciplinaire à Agadir, Maroc. Production audiovisuelle, tech & digital, marketing et négoce international."
     },
     "skip": { en: "Skip to main content", fr: "Aller au contenu principal" },
     "nav.label": { en: "Main navigation", fr: "Navigation principale" },
@@ -46,16 +46,16 @@
     "hero.l2": { en: "Produce.", fr: "Produire." },
     "hero.l3": { en: "Amplify.", fr: "Faire rayonner." },
     "hero.desc": {
-      en: "From film set to cloud, Sahara Creative World brings audiovisual production, technology and communication together under one roof.",
-      fr: "Du plateau de tournage au cloud, Sahara Creative World réunit sous un même toit la production audiovisuelle, la technologie et la communication."
+      en: "From film sets to software, Sahara Creative World brings audiovisual production, technology and communication together under one roof.",
+      fr: "Du plateau de tournage au logiciel, Sahara Creative World réunit sous un même toit la production audiovisuelle, la technologie et la communication."
     },
     "hero.cta1": { en: "Let's talk about your project", fr: "Discutons de votre projet" },
     "hero.cta2": { en: "Explore our services", fr: "Découvrir nos services" },
 
     "services.kicker": { en: "What we do", fr: "Ce que nous faisons" },
     "services.titre": {
-      en: "Six divisions, one standard: excellence",
-      fr: "Six pôles, une seule exigence : l'excellence"
+      en: "Four divisions, one standard: excellence",
+      fr: "Quatre pôles, une seule exigence : l'excellence"
     },
     "services.av.titre": { en: "Audiovisual & production", fr: "Audiovisuel & production" },
     "services.av.desc": {
@@ -69,18 +69,8 @@
     },
     "services.tech.titre": { en: "Tech & digital", fr: "Tech & digital" },
     "services.tech.desc": {
-      en: "Software development, CI/CD, cloud and artificial intelligence — robust products, delivered continuously.",
-      fr: "Développement logiciel, CI/CD, cloud et intelligence artificielle — des produits robustes, livrés en continu."
-    },
-    "services.event.titre": { en: "Events & live production", fr: "Événementiel & régie live" },
-    "services.event.desc": {
-      en: "Conferences, sound, lighting, LED screens — technical mastery in service of the live moment.",
-      fr: "Conférences, sonorisation, éclairage, écrans LED — la maîtrise technique au service du direct."
-    },
-    "services.design.titre": { en: "Creativity & design", fr: "Créativité & design" },
-    "services.design.desc": {
-      en: "Photography, graphic design, interior architecture — the right image, all the way into physical space.",
-      fr: "Photographie, graphisme, architecture intérieure — l'image juste, jusque dans l'espace."
+      en: "Software development, CI/CD and artificial intelligence — robust products, delivered continuously.",
+      fr: "Développement logiciel, CI/CD et intelligence artificielle — des produits robustes, livrés en continu."
     },
     "services.negoce.titre": { en: "Trade & public procurement", fr: "Négoce & marchés publics" },
     "services.negoce.desc": {
@@ -91,16 +81,16 @@
     "apropos.kicker": { en: "Who we are", fr: "Qui sommes-nous" },
     "apropos.titre": { en: "Born in Agadir, facing the world", fr: "Née à Agadir, tournée vers le monde" },
     "apropos.p1": {
-      en: "Sahara Creative World is a multidisciplinary agency based in Agadir, in the heart of the Souss region. A single-shareholder limited company (SARL AU), it was designed from day one as an ecosystem: a place where a film, a web platform, a campaign and an event can all grow out of the same conversation.",
-      fr: "Sahara Creative World est une agence multidisciplinaire installée à Agadir, au cœur du Souss. SARL à associé unique, elle a été pensée dès le départ comme un écosystème : un lieu où un film, une plateforme web, une campagne et un événement peuvent naître de la même conversation."
+      en: "Sahara Creative World is a multidisciplinary agency based in Agadir, in the heart of the Souss region. A single-shareholder limited company (SARL AU), it was designed from day one as an ecosystem: a place where a film, a web platform and a campaign can all grow out of the same conversation.",
+      fr: "Sahara Creative World est une agence multidisciplinaire installée à Agadir, au cœur du Souss. SARL à associé unique, elle a été pensée dès le départ comme un écosystème : un lieu où un film, une plateforme web et une campagne peuvent naître de la même conversation."
     },
     "apropos.p2": {
-      en: "This versatility is not a lack of focus — it is our method. Because our directors talk to our developers and our designers to our stage crews, your projects gain the coherence they usually lose between multiple vendors.",
-      fr: "Cette polyvalence n'est pas une dispersion — c'est notre méthode. Parce que nos réalisateurs parlent aux développeurs et nos designers aux régisseurs, vos projets gagnent en cohérence ce qu'ils perdent habituellement entre plusieurs prestataires."
+      en: "This versatility is not a lack of focus — it is our method. Because our directors talk to our developers and our marketers, your projects gain the coherence they usually lose between multiple vendors.",
+      fr: "Cette polyvalence n'est pas une dispersion — c'est notre méthode. Parce que nos réalisateurs parlent aux développeurs et aux marketeurs, vos projets gagnent en cohérence ce qu'ils perdent habituellement entre plusieurs prestataires."
     },
     "apropos.p3": {
-      en: "From film production to international trade, by way of the cloud and the light of a stage, we hold on to a single ambition: to make Agadir a starting point, never a limit.",
-      fr: "De la production cinématographique au négoce international, en passant par le cloud et la lumière d'une scène, nous cultivons une seule ambition : faire d'Agadir un point de départ, jamais une limite."
+      en: "From film production to international trade, by way of software and marketing, we hold on to a single ambition: to make Agadir a starting point, never a limit.",
+      fr: "De la production cinématographique au négoce international, en passant par le logiciel et le marketing, nous cultivons une seule ambition : faire d'Agadir un point de départ, jamais une limite."
     },
     "apropos.imgAlt": {
       en: "Low-angle view of modern office towers against a blue sky, a symbol of international ambition.",
@@ -123,13 +113,13 @@
     },
     "real.c2.titre": { en: "Case study — Digital", fr: "Étude de cas — Digital" },
     "real.c2.desc": {
-      en: "A web platform continuously deployed to the cloud.",
-      fr: "Plateforme web déployée en continu sur le cloud."
+      en: "A web platform with continuous, automated delivery.",
+      fr: "Une plateforme web livrée en continu, de façon automatisée."
     },
-    "real.c3.titre": { en: "Case study — Live events", fr: "Étude de cas — Événementiel" },
+    "real.c3.titre": { en: "Case study — Marketing", fr: "Étude de cas — Marketing" },
     "real.c3.desc": {
-      en: "Full technical production for a conference.",
-      fr: "Régie technique complète d'une conférence."
+      en: "A measurable social media and SEO campaign.",
+      fr: "Une campagne réseaux sociaux et SEO aux résultats mesurables."
     },
 
     "contact.kicker": { en: "Let's talk", fr: "Parlons-en" },
