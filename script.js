@@ -73,19 +73,31 @@
       fr: "Développement logiciel, CI/CD, intelligence artificielle et audits d'accessibilité WCAG 2.2 — des produits robustes, accessibles à tous."
     },
 
-    "apropos.kicker": { en: "Who we are", fr: "Qui sommes-nous" },
-    "apropos.titre": { en: "Born in Agadir, facing the world", fr: "Née à Agadir, tournée vers le monde" },
+    "apropos.kicker": { en: "About us", fr: "À propos" },
+    "apropos.titre": { en: "Who are we?", fr: "Qui sommes-nous ?" },
     "apropos.p1": {
-      en: "Sahara Creative World is a multidisciplinary agency based in Agadir, in the heart of the Souss region. A single-shareholder limited company (SARL AU), it was designed from day one as an ecosystem: a place where a film, a web platform and a campaign can all grow out of the same conversation.",
-      fr: "Sahara Creative World est une agence multidisciplinaire installée à Agadir, au cœur du Souss. SARL à associé unique, elle a été pensée dès le départ comme un écosystème : un lieu où un film, une plateforme web et une campagne peuvent naître de la même conversation."
+      en: "SAHARA CREATIVE WORLD is a creative and technology company that supports businesses, institutions and organisations in designing innovative, accessible and high-performing digital experiences.",
+      fr: "SAHARA CREATIVE WORLD est une entreprise créative et technologique qui accompagne les entreprises, les institutions et les organisations dans la conception d’expériences digitales innovantes, accessibles et performantes."
     },
     "apropos.p2": {
-      en: "This versatility is not a lack of focus — it is our method. Because our directors talk to our developers and our marketers, your projects gain the coherence they usually lose between multiple vendors.",
-      fr: "Cette polyvalence n'est pas une dispersion — c'est notre méthode. Parce que nos réalisateurs parlent aux développeurs et aux marketeurs, vos projets gagnent en cohérence ce qu'ils perdent habituellement entre plusieurs prestataires."
+      en: "We bring together creativity, technology and strategy to imagine solutions that strengthen brand identity and create real value for users. Our expertise covers audiovisual production, photography, motion design, 2D and 3D animation, visual effects (VFX), web and mobile development, artificial intelligence, immersive experiences (VR/AR), as well as branding and digital communication.",
+      fr: "Nous réunissons la créativité, la technologie et la stratégie pour imaginer des solutions qui renforcent l’identité des marques et créent une véritable valeur pour leurs utilisateurs. Notre expertise couvre la production audiovisuelle, la photographie, le motion design, l’animation 2D et 3D, les effets visuels (VFX), le développement web et mobile, l’intelligence artificielle, les expériences immersives (VR/AR) ainsi que le branding et la communication digitale."
     },
     "apropos.p3": {
-      en: "From film production to marketing, by way of software, we hold on to a single ambition: to make Agadir a starting point, never a limit.",
-      fr: "De la production cinématographique au marketing, en passant par le logiciel, nous cultivons une seule ambition : faire d'Agadir un point de départ, jamais une limite."
+      en: "Because innovation only makes sense when everyone can use it, we build digital accessibility into our projects from the design phase onward. We develop websites and interfaces designed to offer an inclusive experience, in line with best practices and international accessibility standards — most notably the Web Content Accessibility Guidelines (WCAG). Our goal is to allow every user, whatever their abilities or the assistive technologies they rely on, to access content simply, intuitively and efficiently.",
+      fr: "Parce que l’innovation n’a de sens que lorsqu’elle est accessible à tous, nous intégrons l’accessibilité numérique dès la phase de conception de nos projets. Nous développons des sites web et des interfaces pensés pour offrir une expérience inclusive, conforme aux bonnes pratiques et aux standards internationaux d’accessibilité, notamment les recommandations WCAG (Web Content Accessibility Guidelines). Notre objectif est de permettre à chaque utilisateur, quelles que soient ses capacités ou les technologies d’assistance qu’il utilise, d’accéder aux contenus de manière simple, intuitive et efficace."
+    },
+    "apropos.p4": {
+      en: "Our approach rests on a balance between aesthetics, performance, innovation and user experience. Every project is tailor-made to meet our clients’ goals while guaranteeing quality, security, scalability and compliance with digital best practices.",
+      fr: "Notre approche repose sur un équilibre entre esthétique, performance, innovation et expérience utilisateur. Chaque projet est conçu sur mesure afin de répondre aux objectifs de nos clients tout en garantissant qualité, sécurité, évolutivité et conformité aux meilleures pratiques du numérique."
+    },
+    "apropos.p5": {
+      en: "At SAHARA CREATIVE WORLD, we don’t just create content or platforms. We design experiences that inspire, connect people and make digital more accessible, smarter and more human.",
+      fr: "Chez SAHARA CREATIVE WORLD, nous ne nous contentons pas de créer des contenus ou des plateformes. Nous concevons des expériences qui inspirent, connectent les personnes et rendent le numérique plus accessible, plus intelligent et plus humain."
+    },
+    "apropos.p6": {
+      en: "Our mission is to turn ideas into creative, innovative and accessible solutions with a lasting impact, in Morocco and internationally.",
+      fr: "Notre mission est de transformer les idées en solutions créatives, innovantes et accessibles, capables d’avoir un impact durable au Maroc comme à l’international."
     },
     "apropos.imgAlt": {
       en: "Low-angle view of modern office towers against a blue sky, a symbol of international ambition.",
