@@ -69,8 +69,8 @@
     },
     "services.tech.titre": { en: "Tech & digital", fr: "Tech & digital" },
     "services.tech.desc": {
-      en: "Software development, CI/CD and artificial intelligence — robust products, delivered continuously.",
-      fr: "Développement logiciel, CI/CD et intelligence artificielle — des produits robustes, livrés en continu."
+      en: "Software development, CI/CD, artificial intelligence and WCAG 2.2 accessibility audits — robust products, accessible to everyone.",
+      fr: "Développement logiciel, CI/CD, intelligence artificielle et audits d'accessibilité WCAG 2.2 — des produits robustes, accessibles à tous."
     },
     "services.negoce.titre": { en: "Trade & public procurement", fr: "Négoce & marchés publics" },
     "services.negoce.desc": {
