@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ynskhoussi.github.io/sahara-creative-world/sitemap.xml

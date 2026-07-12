@@ -204,6 +204,25 @@
     var meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", t("meta.description"));
 
+    /* SEO : chaque état de langue se canonise lui-même (?lang=fr pour le
+       français) et l'URL reste partageable. replaceState ne déplace ni le
+       focus ni le défilement. */
+    var canonique = document.querySelector('link[rel="canonical"]');
+    if (canonique) {
+      var base = canonique.href.split("?")[0];
+      canonique.href = langue === "fr" ? base + "?lang=fr" : base;
+    }
+    try {
+      var url = new URL(window.location.href);
+      var actuel = url.searchParams.get("lang");
+      var voulu = langue === "fr" ? "fr" : null;
+      if (actuel !== voulu) {
+        if (voulu) { url.searchParams.set("lang", voulu); }
+        else { url.searchParams.delete("lang"); }
+        window.history.replaceState(null, "", url);
+      }
+    } catch (e) { /* file:// ou API indisponible : sans conséquence */ }
+
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       el.textContent = t(el.getAttribute("data-i18n"));
     });
@@ -462,10 +481,17 @@
        node was added, removed or moved. */
   });
 
+  /* Priorité : paramètre d'URL (?lang=fr — utilisé par les moteurs via les
+     annotations hreflang), puis préférence enregistrée, puis anglais. */
   var languePreferee = "en";
   try {
-    if (localStorage.getItem("scw-langue") === "fr") languePreferee = "fr";
-  } catch (e) { /* stockage indisponible */ }
+    var langUrl = new URL(window.location.href).searchParams.get("lang");
+    if (langUrl === "fr" || langUrl === "en") {
+      languePreferee = langUrl;
+    } else if (localStorage.getItem("scw-langue") === "fr") {
+      languePreferee = "fr";
+    }
+  } catch (e) { /* stockage ou API indisponible */ }
 
   if (languePreferee !== "en") {
     appliquerLangue(languePreferee);
