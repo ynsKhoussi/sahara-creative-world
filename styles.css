@@ -221,6 +221,11 @@ html:not(.js) .nav-links { margin-left: auto; }
   background:
     linear-gradient(180deg, rgba(17, 17, 17, 0.86) 0%, rgba(17, 17, 17, 0.84) 55%, rgba(17, 17, 17, 0.92) 100%),
     url("assets/images/regie-live-projecteurs.jpg") center 30% / cover no-repeat;
+  /* Couche de fond opaque sous l'image : (1) le texte reste lisible si la
+     photo ne charge pas ; (2) les vérificateurs automatiques de contraste,
+     incapables de composer une background-image, calculent contre cette
+     couleur au lieu de remonter au fond clair de la page. */
+  background-color: var(--noir);
   color: var(--blanc);
   padding: clamp(2.5rem, 6vh, 4rem) 1.25rem clamp(5rem, 13vh, 8rem);
 }
@@ -445,6 +450,15 @@ html:not(.js) .nav-links { margin-left: auto; }
   align-items: center;
 }
 
+/* DÉCISION TYPOGRAPHIQUE (audit axe « p ressemble à un titre ») :
+   dans cette section, SEUL #apropos-titre est un titre. Le kicker est un
+   libellé (petit, 500) et les trois paragraphes sont du corps de texte —
+   cette règle épingle leur style pour empêcher toute dérive future. */
+.apropos-text > p:not(.section-kicker) {
+  font-size: 1.0625rem;
+  font-weight: 400;
+}
+
 .apropos-media img {
   border-radius: 12px;
   border-bottom: 6px solid var(--or-fonce);
@@ -483,6 +497,8 @@ html:not(.js) .nav-links { margin-left: auto; }
   margin-bottom: 1.2rem;
   border-radius: 8px;
   background: repeating-linear-gradient(45deg, #221F16, #221F16 12px, #1B1913 12px, #1B1913 24px);
+  /* Même principe que le héros : couleur opaque sous le dégradé décoratif */
+  background-color: #1B1913;
 }
 
 .card-badge {
