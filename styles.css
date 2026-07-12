@@ -219,7 +219,7 @@ html:not(.js) .nav-links { margin-left: auto; }
   /* Photo décorative en arrière-plan CSS (ignorée par les lecteurs d'écran),
      recouverte d'un voile sombre garantissant le contraste du texte. */
   background:
-    linear-gradient(180deg, rgba(17, 17, 17, 0.86) 0%, rgba(17, 17, 17, 0.8) 55%, rgba(17, 17, 17, 0.92) 100%),
+    linear-gradient(180deg, rgba(17, 17, 17, 0.86) 0%, rgba(17, 17, 17, 0.84) 55%, rgba(17, 17, 17, 0.92) 100%),
     url("assets/images/regie-live-projecteurs.jpg") center 30% / cover no-repeat;
   color: var(--blanc);
   padding: clamp(2.5rem, 6vh, 4rem) 1.25rem clamp(5rem, 13vh, 8rem);
@@ -244,9 +244,15 @@ html:not(.js) .nav-links { margin-left: auto; }
   filter: drop-shadow(0 14px 38px rgba(0, 0, 0, 0.55));
 }
 
+/* Pastille pleine : le contraste du texte est calculé sur ce fond opaque
+   (8.6:1), plus aucune dépendance à la photo derrière (WCAG 1.4.3). */
 .hero-kicker {
+  display: inline-block;
+  background: var(--noir);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
   color: var(--or-vif);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -319,9 +325,11 @@ html:not(.js) .nav-links { margin-left: auto; }
 
 /* ---------- Sections génériques ---------- */
 
+/* Graisse 500 (pas 600+) : un <p> gras en capitales devant un titre
+   déclenche l'heuristique « paragraphe utilisé comme titre » d'axe. */
 .section-kicker {
   color: var(--or-fonce);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-size: 0.82rem;
