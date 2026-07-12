@@ -370,11 +370,11 @@ html:not(.js) .nav-links { margin-left: auto; }
 .tile { border-radius: 12px; overflow: hidden; position: relative; }
 
 /* Disposition asymétrique (3 tuiles) :
-   [ audiovisuel 4×2 ][ or 2×1   ]
-   [                  ][ tech 2×1 ] */
+   [ audiovisuel 4×2 ][ or (tech) 2×1 ]
+   [                  ][ marketing 2×1 ] */
 .tile-audiovisuel { grid-column: span 4; grid-row: span 2; }
 .tile-gold        { grid-column: span 2; }
-.tile-tech        { grid-column: span 2; }
+.tile-mkt         { grid-column: span 2; }
 
 .tile-content {
   position: relative;
@@ -417,7 +417,7 @@ html:not(.js) .nav-links { margin-left: auto; }
 }
 
 .tile-audiovisuel::before { background-image: url("assets/images/plateau-tournage.jpg"); }
-.tile-tech::before        { background-image: url("assets/images/dev-code-ecrans.jpg"); }
+.tile-mkt::before         { background-image: url("assets/images/studio-photo.jpg"); }
 
 .tile-photo h3 { color: var(--or-vif); }
 
@@ -736,7 +736,7 @@ main a:not(.btn) { color: var(--or-fonce); }
 
   .bento { grid-template-columns: 1fr; }
 
-  .tile-audiovisuel, .tile-gold, .tile-tech {
+  .tile-audiovisuel, .tile-gold, .tile-mkt {
     grid-column: auto;
     grid-row: auto;
   }
