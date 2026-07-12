@@ -22,8 +22,8 @@
       fr: "Sahara Creative World — Agence créative & technologique à Agadir"
     },
     "meta.description": {
-      en: "Sahara Creative World (SCW): a multidisciplinary agency in Agadir, Morocco. Audiovisual production, tech & digital, marketing and international trade.",
-      fr: "Sahara Creative World (SCW) : agence multidisciplinaire à Agadir, Maroc. Production audiovisuelle, tech & digital, marketing et négoce international."
+      en: "Sahara Creative World (SCW): a multidisciplinary agency in Agadir, Morocco. Audiovisual production, tech & digital and marketing.",
+      fr: "Sahara Creative World (SCW) : agence multidisciplinaire à Agadir, Maroc. Production audiovisuelle, tech & digital et marketing."
     },
     "skip": { en: "Skip to main content", fr: "Aller au contenu principal" },
     "nav.label": { en: "Main navigation", fr: "Navigation principale" },
@@ -54,8 +54,8 @@
 
     "services.kicker": { en: "What we do", fr: "Ce que nous faisons" },
     "services.titre": {
-      en: "Four divisions, one standard: excellence",
-      fr: "Quatre pôles, une seule exigence : l'excellence"
+      en: "Three divisions, one standard: excellence",
+      fr: "Trois pôles, une seule exigence : l'excellence"
     },
     "services.av.titre": { en: "Audiovisual & production", fr: "Audiovisuel & production" },
     "services.av.desc": {
@@ -72,11 +72,6 @@
       en: "Software development, CI/CD, artificial intelligence and WCAG 2.2 accessibility audits — robust products, accessible to everyone.",
       fr: "Développement logiciel, CI/CD, intelligence artificielle et audits d'accessibilité WCAG 2.2 — des produits robustes, accessibles à tous."
     },
-    "services.negoce.titre": { en: "Trade & public procurement", fr: "Négoce & marchés publics" },
-    "services.negoce.desc": {
-      en: "International trade and public tenders — a reliable partner from sourcing to delivery.",
-      fr: "Négoce international et appels d'offres — un partenaire fiable, du sourcing à la livraison."
-    },
 
     "apropos.kicker": { en: "Who we are", fr: "Qui sommes-nous" },
     "apropos.titre": { en: "Born in Agadir, facing the world", fr: "Née à Agadir, tournée vers le monde" },
@@ -89,8 +84,8 @@
       fr: "Cette polyvalence n'est pas une dispersion — c'est notre méthode. Parce que nos réalisateurs parlent aux développeurs et aux marketeurs, vos projets gagnent en cohérence ce qu'ils perdent habituellement entre plusieurs prestataires."
     },
     "apropos.p3": {
-      en: "From film production to international trade, by way of software and marketing, we hold on to a single ambition: to make Agadir a starting point, never a limit.",
-      fr: "De la production cinématographique au négoce international, en passant par le logiciel et le marketing, nous cultivons une seule ambition : faire d'Agadir un point de départ, jamais une limite."
+      en: "From film production to marketing, by way of software, we hold on to a single ambition: to make Agadir a starting point, never a limit.",
+      fr: "De la production cinématographique au marketing, en passant par le logiciel, nous cultivons une seule ambition : faire d'Agadir un point de départ, jamais une limite."
     },
     "apropos.imgAlt": {
       en: "Low-angle view of modern office towers against a blue sky, a symbol of international ambition.",

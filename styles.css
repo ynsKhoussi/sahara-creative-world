@@ -82,7 +82,6 @@ section, [id] { scroll-margin-top: 6rem; }
 .site-header :focus-visible,
 .hero :focus-visible,
 .tile-photo :focus-visible,
-.tile-noir :focus-visible,
 .realisations :focus-visible,
 .site-footer :focus-visible {
   outline-color: var(--or-vif);
@@ -362,14 +361,12 @@ html:not(.js) .nav-links { margin-left: auto; }
 
 .tile { border-radius: 12px; overflow: hidden; position: relative; }
 
-/* Disposition asymétrique (4 tuiles) :
+/* Disposition asymétrique (3 tuiles) :
    [ audiovisuel 4×2 ][ or 2×1   ]
-   [                  ][ tech 2×1 ]
-   [ noir 6×1                     ] */
+   [                  ][ tech 2×1 ] */
 .tile-audiovisuel { grid-column: span 4; grid-row: span 2; }
 .tile-gold        { grid-column: span 2; }
 .tile-tech        { grid-column: span 2; }
-.tile-noir        { grid-column: span 6; }
 
 .tile-content {
   position: relative;
@@ -422,14 +419,6 @@ html:not(.js) .nav-links { margin-left: auto; }
 }
 
 .tile-gold h3 { color: var(--noir); }
-
-.tile-noir {
-  background: var(--noir);
-  color: var(--creme);
-  border: 1px solid #2E2A20;
-}
-
-.tile-noir h3 { color: var(--or-vif); }
 
 /* ---------- À propos ---------- */
 
@@ -529,6 +518,9 @@ html:not(.js) .nav-links { margin-left: auto; }
 .clients-liste img {
   height: clamp(6rem, 10vw, 7.5rem);
   width: auto;
+  /* Les logos livrés sur fond sombre deviennent des vignettes arrondies ;
+     ceux sur fond blanc se fondent dans la bande. */
+  border-radius: 10px;
 }
 
 /* ---------- Contact ---------- */
@@ -736,7 +728,7 @@ main a:not(.btn) { color: var(--or-fonce); }
 
   .bento { grid-template-columns: 1fr; }
 
-  .tile-audiovisuel, .tile-gold, .tile-tech, .tile-noir {
+  .tile-audiovisuel, .tile-gold, .tile-tech {
     grid-column: auto;
     grid-row: auto;
   }
