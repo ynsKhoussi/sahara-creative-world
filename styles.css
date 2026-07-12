@@ -502,6 +502,35 @@ html:not(.js) .nav-links { margin-left: auto; }
 .card h3 { font-size: 1.15rem; color: var(--blanc); }
 .card p { margin: 0; color: #C9C2B2; }
 
+/* ---------- Clients / références ---------- */
+
+.clients {
+  /* Fond blanc : les logos clients à fond blanc s'y fondent sans détourage */
+  background: var(--blanc);
+  border-top: 4px solid var(--noir);
+  padding: clamp(3rem, 8vh, 5.5rem) 1.25rem;
+}
+
+.clients-inner {
+  max-width: var(--largeur-max);
+  margin: 0 auto;
+}
+
+.clients-liste {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.clients-liste img {
+  height: clamp(6rem, 10vw, 7.5rem);
+  width: auto;
+}
+
 /* ---------- Contact ---------- */
 
 .contact {
@@ -578,7 +607,16 @@ html:not(.js) .nav-links { margin-left: auto; }
 .form-status {
   margin: 1rem 0 0;
   font-weight: 600;
-  color: #245B26; /* 6.6:1 sur blanc */
+  color: #245B26; /* 8.1:1 sur blanc */
+}
+
+/* L'échec d'envoi est annoncé par le texte (« Erreur : … »), la couleur
+   n'est qu'un renfort (WCAG 1.4.1) */
+.form-status.est-erreur { color: #8F2B10; }
+
+.btn-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
 }
 
 .form-status:empty { margin: 0; }

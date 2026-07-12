@@ -122,12 +122,16 @@
       fr: "Une campagne réseaux sociaux et SEO aux résultats mesurables."
     },
 
+    "clients.kicker": { en: "References", fr: "Références" },
+    "clients.titre": { en: "They put their trust in us", fr: "Ils nous ont fait confiance" },
+
     "contact.kicker": { en: "Let's talk", fr: "Parlons-en" },
     "contact.titre": { en: "Have a project in mind?", fr: "Un projet en tête ?" },
     "contact.desc": {
       en: "Tell us your idea — a member of the team will get back to you within 48 business hours.",
       fr: "Racontez-nous votre idée — un membre de l'équipe vous répond sous 48 heures ouvrées."
     },
+    "contact.tel": { en: "Prefer to talk?", fr: "Vous préférez de vive voix ?" },
     "form.hint": { en: "All fields are required.", fr: "Tous les champs sont obligatoires." },
     "form.nom": { en: "Full name", fr: "Nom complet" },
     "form.email": { en: "Email address", fr: "Adresse e-mail" },
@@ -151,6 +155,14 @@
     "erreur.message.vide": {
       en: "Error: please write your message.",
       fr: "Erreur : veuillez écrire votre message."
+    },
+    "statut.envoi": {
+      en: "Sending your message…",
+      fr: "Envoi de votre message…"
+    },
+    "statut.erreur": {
+      en: "Error: your message could not be sent. Please try again, or write to us directly at contact@saharacreativeworld.ma.",
+      fr: "Erreur : votre message n'a pas pu être envoyé. Réessayez, ou écrivez-nous directement à contact@saharacreativeworld.ma."
     },
     "statut.succes": {
       en: "Thank you! Your message has been received. We will reply within 48 business hours.",
@@ -372,6 +384,29 @@
     });
   });
 
+  /* Envoi réel via Web3Forms (https://web3forms.com — fonctionne depuis un
+     site 100 % statique comme GitHub Pages). Pour activer : créer une clé
+     d'accès gratuite sur web3forms.com avec l'adresse de réception, puis la
+     coller ci-dessous. Tant que la clé est vide, l'envoi est simulé. */
+  var WEB3FORMS_ACCESS_KEY = "";
+
+  var boutonEnvoi = form.querySelector(".btn-submit");
+
+  function afficherStatut(cle) {
+    cleStatut = cle;
+    statut.textContent = cle ? t(cle) : "";
+    statut.classList.toggle("est-erreur", cle === "statut.erreur");
+  }
+
+  function reussirEnvoi() {
+    form.reset();
+    champs.forEach(function (champ) {
+      champ.cleErreur = "";
+      champ.input.removeAttribute("aria-invalid");
+    });
+    afficherStatut("statut.succes");
+  }
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -382,21 +417,41 @@
     });
 
     if (premierInvalide) {
-      cleStatut = "";
-      statut.textContent = "";
+      afficherStatut("");
       premierInvalide.focus();
       return;
     }
 
-    /* PLACEHOLDER: wire the real submission (backend or form service)
-       here before going to production. */
-    form.reset();
-    champs.forEach(function (champ) {
-      champ.cleErreur = "";
-      champ.input.removeAttribute("aria-invalid");
+    if (WEB3FORMS_ACCESS_KEY === "") {
+      /* Clé absente : comportement simulé (pré-production). */
+      reussirEnvoi();
+      return;
+    }
+
+    boutonEnvoi.disabled = true;
+    afficherStatut("statut.envoi");
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: "Nouveau message — saharacreativeworld",
+        name: document.getElementById("champ-nom").value,
+        email: document.getElementById("champ-email").value,
+        message: document.getElementById("champ-message").value
+      })
+    }).then(function (reponse) {
+      if (!reponse.ok) throw new Error("HTTP " + reponse.status);
+      return reponse.json();
+    }).then(function (donnees) {
+      if (!donnees.success) throw new Error("refus du service");
+      reussirEnvoi();
+    }).catch(function () {
+      afficherStatut("statut.erreur");
+    }).finally(function () {
+      boutonEnvoi.disabled = false;
     });
-    cleStatut = "statut.succes";
-    statut.textContent = t(cleStatut);
   });
 
   /* ---------- Language init & toggle ---------- */
