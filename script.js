@@ -161,8 +161,8 @@
       fr: "Envoi de votre message…"
     },
     "statut.erreur": {
-      en: "Error: your message could not be sent. Please try again, or write to us directly at contact@saharacreativeworld.ma.",
-      fr: "Erreur : votre message n'a pas pu être envoyé. Réessayez, ou écrivez-nous directement à contact@saharacreativeworld.ma."
+      en: "Error: your message could not be sent. Please try again, or write to us directly at saharacreativeworld@gmail.com.",
+      fr: "Erreur : votre message n'a pas pu être envoyé. Réessayez, ou écrivez-nous directement à saharacreativeworld@gmail.com."
     },
     "statut.succes": {
       en: "Thank you! Your message has been received. We will reply within 48 business hours.",
@@ -407,7 +407,7 @@
      site 100 % statique comme GitHub Pages). Pour activer : créer une clé
      d'accès gratuite sur web3forms.com avec l'adresse de réception, puis la
      coller ci-dessous. Tant que la clé est vide, l'envoi est simulé. */
-  var WEB3FORMS_ACCESS_KEY = "";
+  var WEB3FORMS_ACCESS_KEY = "e90de7cb-cebd-46bd-8491-ae683f2e08ac";
 
   var boutonEnvoi = form.querySelector(".btn-submit");
 
