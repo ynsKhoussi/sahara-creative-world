@@ -689,14 +689,16 @@ main a:not(.btn) { color: var(--or-fonce); }
 
 @media (prefers-reduced-motion: no-preference) {
 
+  /* Révélation par translation SEULE, sans fondu d'opacité : un élément
+     semi-transparent au moment d'un scan automatique (axe) fait calculer
+     le contraste par mélange avec ce qui se trouve derrière, produisant
+     de fausses alertes. Opaque en permanence = contraste toujours exact. */
   html.js .reveal {
-    opacity: 0;
     transform: translateY(22px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: transform 0.6s ease;
   }
 
   html.js .reveal.est-visible {
-    opacity: 1;
     transform: none;
   }
 
