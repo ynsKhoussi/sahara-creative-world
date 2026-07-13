@@ -54,7 +54,7 @@
   <!-- Le paramètre ?v= force le navigateur à recharger le CSS/JS quand ils
        changent (sinon le cache GitHub Pages peut servir un HTML neuf avec un
        CSS périmé). L'incrémenter à chaque modification de ces fichiers. -->
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -226,7 +226,7 @@
           sending. While the key is empty, submission is simulated.
         -->
         <form class="contact-form reveal" action="#" method="post" novalidate>
-          <p class="form-hint" id="form-obligatoire" data-i18n="form.hint">All fields are required.</p>
+          <p class="form-hint" id="form-obligatoire" data-i18n="form.hint">All fields are required, unless marked optional.</p>
 
           <div class="form-field">
             <label for="champ-nom" data-i18n="form.nom">Full name</label>
@@ -238,6 +238,85 @@
             <label for="champ-email" data-i18n="form.email">Email address</label>
             <input type="email" id="champ-email" name="email" autocomplete="email" required aria-required="true">
             <p class="form-error" id="erreur-email"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="champ-tel" data-i18n="form.tel">Phone number (optional)</label>
+            <div class="tel-groupe">
+              <label class="visually-hidden" for="champ-indicatif" data-i18n="form.indicatif">Country code</label>
+              <select id="champ-indicatif" name="indicatif" autocomplete="tel-country-code">
+                <option value="+212" data-pays="MA" selected>Morocco (+212)</option>
+                <option value="+213" data-pays="DZ">Algeria (+213)</option>
+                <option value="+54" data-pays="AR">Argentina (+54)</option>
+                <option value="+61" data-pays="AU">Australia (+61)</option>
+                <option value="+43" data-pays="AT">Austria (+43)</option>
+                <option value="+973" data-pays="BH">Bahrain (+973)</option>
+                <option value="+32" data-pays="BE">Belgium (+32)</option>
+                <option value="+229" data-pays="BJ">Benin (+229)</option>
+                <option value="+55" data-pays="BR">Brazil (+55)</option>
+                <option value="+226" data-pays="BF">Burkina Faso (+226)</option>
+                <option value="+237" data-pays="CM">Cameroon (+237)</option>
+                <option value="+1" data-pays="CA">Canada (+1)</option>
+                <option value="+86" data-pays="CN">China (+86)</option>
+                <option value="+225" data-pays="CI">Côte d'Ivoire (+225)</option>
+                <option value="+45" data-pays="DK">Denmark (+45)</option>
+                <option value="+20" data-pays="EG">Egypt (+20)</option>
+                <option value="+358" data-pays="FI">Finland (+358)</option>
+                <option value="+33" data-pays="FR">France (+33)</option>
+                <option value="+241" data-pays="GA">Gabon (+241)</option>
+                <option value="+49" data-pays="DE">Germany (+49)</option>
+                <option value="+233" data-pays="GH">Ghana (+233)</option>
+                <option value="+30" data-pays="GR">Greece (+30)</option>
+                <option value="+224" data-pays="GN">Guinea (+224)</option>
+                <option value="+91" data-pays="IN">India (+91)</option>
+                <option value="+62" data-pays="ID">Indonesia (+62)</option>
+                <option value="+353" data-pays="IE">Ireland (+353)</option>
+                <option value="+39" data-pays="IT">Italy (+39)</option>
+                <option value="+81" data-pays="JP">Japan (+81)</option>
+                <option value="+962" data-pays="JO">Jordan (+962)</option>
+                <option value="+254" data-pays="KE">Kenya (+254)</option>
+                <option value="+965" data-pays="KW">Kuwait (+965)</option>
+                <option value="+961" data-pays="LB">Lebanon (+961)</option>
+                <option value="+218" data-pays="LY">Libya (+218)</option>
+                <option value="+352" data-pays="LU">Luxembourg (+352)</option>
+                <option value="+60" data-pays="MY">Malaysia (+60)</option>
+                <option value="+223" data-pays="ML">Mali (+223)</option>
+                <option value="+222" data-pays="MR">Mauritania (+222)</option>
+                <option value="+52" data-pays="MX">Mexico (+52)</option>
+                <option value="+31" data-pays="NL">Netherlands (+31)</option>
+                <option value="+64" data-pays="NZ">New Zealand (+64)</option>
+                <option value="+227" data-pays="NE">Niger (+227)</option>
+                <option value="+234" data-pays="NG">Nigeria (+234)</option>
+                <option value="+47" data-pays="NO">Norway (+47)</option>
+                <option value="+968" data-pays="OM">Oman (+968)</option>
+                <option value="+92" data-pays="PK">Pakistan (+92)</option>
+                <option value="+63" data-pays="PH">Philippines (+63)</option>
+                <option value="+48" data-pays="PL">Poland (+48)</option>
+                <option value="+351" data-pays="PT">Portugal (+351)</option>
+                <option value="+974" data-pays="QA">Qatar (+974)</option>
+                <option value="+40" data-pays="RO">Romania (+40)</option>
+                <option value="+7" data-pays="RU">Russia (+7)</option>
+                <option value="+966" data-pays="SA">Saudi Arabia (+966)</option>
+                <option value="+221" data-pays="SN">Senegal (+221)</option>
+                <option value="+65" data-pays="SG">Singapore (+65)</option>
+                <option value="+27" data-pays="ZA">South Africa (+27)</option>
+                <option value="+82" data-pays="KR">South Korea (+82)</option>
+                <option value="+34" data-pays="ES">Spain (+34)</option>
+                <option value="+46" data-pays="SE">Sweden (+46)</option>
+                <option value="+41" data-pays="CH">Switzerland (+41)</option>
+                <option value="+255" data-pays="TZ">Tanzania (+255)</option>
+                <option value="+66" data-pays="TH">Thailand (+66)</option>
+                <option value="+228" data-pays="TG">Togo (+228)</option>
+                <option value="+216" data-pays="TN">Tunisia (+216)</option>
+                <option value="+90" data-pays="TR">Turkey (+90)</option>
+                <option value="+380" data-pays="UA">Ukraine (+380)</option>
+                <option value="+971" data-pays="AE">United Arab Emirates (+971)</option>
+                <option value="+44" data-pays="GB">United Kingdom (+44)</option>
+                <option value="+1" data-pays="US">United States (+1)</option>
+              </select>
+              <input type="tel" id="champ-tel" name="telephone" autocomplete="tel-national">
+            </div>
+            <p class="form-error" id="erreur-tel"></p>
           </div>
 
           <div class="form-field">
@@ -284,6 +363,6 @@
     <p class="footer-legal" data-i18n="footer.legal">© 2026 Sahara Creative World. All rights reserved.</p>
   </footer>
 
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>

@@ -115,7 +115,12 @@
     },
     "contact.tel": { en: "Prefer to talk?", fr: "Vous préférez de vive voix ?" },
     "contact.wa": { en: "Or chat with us on", fr: "Ou écrivez-nous sur" },
-    "form.hint": { en: "All fields are required.", fr: "Tous les champs sont obligatoires." },
+    "form.hint": {
+      en: "All fields are required, unless marked optional.",
+      fr: "Tous les champs sont obligatoires, sauf mention contraire."
+    },
+    "form.tel": { en: "Phone number (optional)", fr: "Téléphone (facultatif)" },
+    "form.indicatif": { en: "Country code", fr: "Indicatif pays" },
     "form.nom": { en: "Full name", fr: "Nom complet" },
     "form.email": { en: "Email address", fr: "Adresse e-mail" },
     "form.message": { en: "Your message", fr: "Votre message" },
@@ -138,6 +143,10 @@
     "erreur.message.vide": {
       en: "Error: please write your message.",
       fr: "Erreur : veuillez écrire votre message."
+    },
+    "erreur.tel.invalide": {
+      en: "Error: this phone number looks invalid — use digits only (example: 620035424).",
+      fr: "Erreur : ce numéro de téléphone semble invalide — chiffres uniquement (exemple : 620035424)."
     },
     "statut.envoi": {
       en: "Sending your message…",
@@ -228,6 +237,18 @@
       langToggle.setAttribute("aria-label", "Switch to English — EN");
       langToggle.setAttribute("lang", "en");
     }
+
+    /* Noms de pays de l'indicatif téléphonique localisés dans la langue
+       affichée (Intl.DisplayNames) ; le libellé anglais statique sert de
+       repli si l'API n'est pas disponible. */
+    try {
+      var noms = new Intl.DisplayNames([langue], { type: "region" });
+      document.querySelectorAll("#champ-indicatif option").forEach(function (opt) {
+        var pays = opt.getAttribute("data-pays");
+        var nom = noms.of(pays);
+        if (nom && nom !== pays) opt.textContent = nom + " (" + opt.value + ")";
+      });
+    } catch (e) { /* Intl.DisplayNames indisponible : libellés statiques conservés */ }
 
     /* Re-render any error/status currently displayed, in the new language */
     champs.forEach(function (champ) {
@@ -349,6 +370,19 @@
       }
     },
     {
+      /* Champ FACULTATIF : ne signale une erreur que s'il est rempli
+         avec un format invraisemblable. */
+      input: document.getElementById("champ-tel"),
+      erreur: document.getElementById("erreur-tel"),
+      cleErreur: "",
+      valider: function (v) {
+        var chiffres = v.replace(/[\s.\-()]/g, "");
+        if (chiffres === "") return "";
+        if (!/^[0-9]{6,14}$/.test(chiffres)) return "erreur.tel.invalide";
+        return "";
+      }
+    },
+    {
       input: document.getElementById("champ-message"),
       erreur: document.getElementById("erreur-message"),
       cleErreur: "",
@@ -440,6 +474,8 @@
         subject: "Nouveau message — saharacreativeworld",
         name: document.getElementById("champ-nom").value,
         email: document.getElementById("champ-email").value,
+        phone: document.getElementById("champ-tel").value.trim() === "" ? "(non renseigné)" :
+          document.getElementById("champ-indicatif").value + " " + document.getElementById("champ-tel").value.trim(),
         message: document.getElementById("champ-message").value
       })
     }).then(function (reponse) {

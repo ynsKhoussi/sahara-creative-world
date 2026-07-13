@@ -51,6 +51,19 @@ p { margin: 0 0 1em; }
    de navigation collante (WCAG 2.4.11 — focus non obscurci). */
 section, [id] { scroll-margin-top: 6rem; }
 
+/* Masqué visuellement mais annoncé par les lecteurs d'écran */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ---------- Lien d'évitement ---------- */
 
 .skip-link {
@@ -529,6 +542,7 @@ html:not(.js) .nav-links { margin-left: auto; }
 }
 
 .form-field input,
+.form-field select,
 .form-field textarea {
   width: 100%;
   padding: 0.8rem 0.9rem;
@@ -540,9 +554,28 @@ html:not(.js) .nav-links { margin-left: auto; }
 }
 
 .form-field input:focus-visible,
+.form-field select:focus-visible,
 .form-field textarea:focus-visible {
   outline: 3px solid var(--or-fonce);
   outline-offset: 1px;
+}
+
+/* Indicatif pays + numéro : l'indicatif garde une largeur fixe,
+   le numéro prend le reste ; passage sur deux lignes si trop étroit */
+.tel-groupe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tel-groupe select {
+  flex: 0 1 11rem;
+  min-width: 8rem;
+}
+
+.tel-groupe input {
+  flex: 1 1 9rem;
+  min-width: 0;
 }
 
 /* Erreurs : signalées par le texte ET un repère visuel non chromatique
