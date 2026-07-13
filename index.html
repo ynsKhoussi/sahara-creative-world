@@ -54,7 +54,7 @@
   <!-- Le paramètre ?v= force le navigateur à recharger le CSS/JS quand ils
        changent (sinon le cache GitHub Pages peut servir un HTML neuf avec un
        CSS périmé). L'incrémenter à chaque modification de ces fichiers. -->
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -78,7 +78,6 @@
         <li><a href="#haut" aria-current="page" data-i18n="nav.accueil">Home</a></li>
         <li><a href="#services" data-i18n="nav.services">Services</a></li>
         <li><a href="#a-propos" data-i18n="nav.apropos">About</a></li>
-        <li><a href="#realisations" data-i18n="nav.realisations">Our work</a></li>
         <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
@@ -163,38 +162,6 @@
       </div>
     </section>
 
-    <!-- ============ OUR WORK ============ -->
-    <!--
-      PLACEHOLDER SECTION — holding content.
-      The three cards below are structural examples meant to be replaced by
-      real case studies (visual, client, results) as soon as SCW's first
-      documented projects are available.
-    -->
-    <section class="realisations" id="realisations" aria-labelledby="realisations-titre">
-      <div class="section-head section-head-dark reveal">
-        <p class="section-kicker" data-i18n="real.kicker">Our projects</p>
-        <h2 id="realisations-titre" data-i18n="real.titre">Our work</h2>
-        <p class="section-sub" data-i18n="real.sub">Our first case studies are on their way. Here is how they will live here.</p>
-      </div>
-      <ul class="cards">
-        <li class="card reveal">
-          <div class="card-media" aria-hidden="true"><span class="card-badge" data-i18n="real.badge">Coming soon</span></div>
-          <h3 data-i18n="real.c1.titre">Case study — Audiovisual</h3>
-          <p data-i18n="real.c1.desc">Full production, from script to post-production.</p>
-        </li>
-        <li class="card reveal">
-          <div class="card-media" aria-hidden="true"><span class="card-badge" data-i18n="real.badge2">Coming soon</span></div>
-          <h3 data-i18n="real.c2.titre">Case study — Digital</h3>
-          <p data-i18n="real.c2.desc">A web platform with continuous, automated delivery.</p>
-        </li>
-        <li class="card reveal">
-          <div class="card-media" aria-hidden="true"><span class="card-badge" data-i18n="real.badge3">Coming soon</span></div>
-          <h3 data-i18n="real.c3.titre">Case study — Marketing</h3>
-          <p data-i18n="real.c3.desc">A measurable social media and SEO campaign.</p>
-        </li>
-      </ul>
-    </section>
-
     <!-- ============ CLIENTS ============ -->
     <!-- Pour ajouter un client : dupliquer un <li> et fournir un logo
          (fond blanc ou transparent) dans assets/clients/. -->
@@ -218,13 +185,22 @@
             <img src="assets/clients/aya-gold-silver.jpg" alt="AYA Gold &amp; Silver" width="436" height="300">
           </li>
           <li>
-            <img src="assets/clients/wrigat-spain.jpg" alt="Wrigat Spain" width="300" height="300">
+            <img src="assets/clients/wrigat-spain.jpg" alt="Wrigat Spain" width="365" height="300">
+          </li>
+          <li>
+            <img src="assets/clients/groupe-tikida.jpg" alt="Groupe Tikida — Le tourisme par excellence" width="382" height="300">
+          </li>
+          <li>
+            <img src="assets/clients/ansar-data.jpg" alt="Ansar Data" width="271" height="300">
           </li>
           <li>
             <img src="assets/clients/olympia.jpg" alt="L'Olympia" width="790" height="253">
           </li>
           <li>
             <img src="assets/clients/moussem-tan-tan.jpg" alt="Moussem de Tan-Tan — Fondation Almouggar" width="494" height="242">
+          </li>
+          <li>
+            <img src="assets/clients/tamazight-tv8.jpg" alt="Tamazight TV 8" width="421" height="300">
           </li>
         </ul>
       </div>
@@ -237,7 +213,10 @@
           <p class="section-kicker" data-i18n="contact.kicker">Let's talk</p>
           <h2 id="contact-titre" data-i18n="contact.titre">Have a project in mind?</h2>
           <p data-i18n="contact.desc">Tell us your idea — a member of the team will get back to you within 48 business hours.</p>
-          <p><span data-i18n="contact.tel">Prefer to talk?</span> <a href="tel:+21220035424">+212 20 03 54 24</a></p>
+          <p>
+            <span data-i18n="contact.tel">Prefer to talk?</span> <a href="tel:+21220035424">+212 20 03 54 24</a><br>
+            <span data-i18n="contact.wa">Or chat with us on</span> <a href="https://wa.me/21220035424">WhatsApp</a>
+          </p>
         </div>
 
         <!--
@@ -288,7 +267,8 @@
           Sahara Creative World — SARL AU<br>
           <span data-i18n="footer.ville">Agadir, Morocco</span><br>
           <a href="mailto:saharacreativeworld@gmail.com">saharacreativeworld@gmail.com</a><br>
-          <a href="tel:+21220035424">+212 20 03 54 24</a>
+          <a href="tel:+21220035424">+212 20 03 54 24</a><br>
+          <a href="https://wa.me/21220035424">WhatsApp</a>
         </address>
       </div>
       <div class="footer-nav">
@@ -297,7 +277,6 @@
           <li><a href="#haut" data-i18n="footer.accueil">Home</a></li>
           <li><a href="#services" data-i18n="footer.services">Services</a></li>
           <li><a href="#a-propos" data-i18n="footer.apropos">About</a></li>
-          <li><a href="#realisations" data-i18n="footer.realisations">Our work</a></li>
           <li><a href="#contact" data-i18n="footer.contact">Contact</a></li>
         </ul>
       </div>
@@ -305,6 +284,6 @@
     <p class="footer-legal" data-i18n="footer.legal">© 2026 Sahara Creative World. All rights reserved.</p>
   </footer>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

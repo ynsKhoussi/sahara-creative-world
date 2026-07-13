@@ -35,7 +35,6 @@
     "nav.accueil": { en: "Home", fr: "Accueil" },
     "nav.services": { en: "Services", fr: "Services" },
     "nav.apropos": { en: "About", fr: "À propos" },
-    "nav.realisations": { en: "Our work", fr: "Réalisations" },
     "nav.contact": { en: "Contact", fr: "Contact" },
 
     "hero.kicker": {
@@ -104,30 +103,6 @@
       fr: "Contre-plongée sur des tours de bureaux modernes se détachant sur un ciel bleu, symbole d'ambition internationale."
     },
 
-    "real.kicker": { en: "Our projects", fr: "Nos travaux" },
-    "real.titre": { en: "Our work", fr: "Réalisations" },
-    "real.sub": {
-      en: "Our first case studies are on their way. Here is how they will live here.",
-      fr: "Nos premières études de cas arrivent bientôt. Voici comment elles vivront ici."
-    },
-    "real.badge": { en: "Coming soon", fr: "À venir" },
-    "real.badge2": { en: "Coming soon", fr: "À venir" },
-    "real.badge3": { en: "Coming soon", fr: "À venir" },
-    "real.c1.titre": { en: "Case study — Audiovisual", fr: "Étude de cas — Audiovisuel" },
-    "real.c1.desc": {
-      en: "Full production, from script to post-production.",
-      fr: "Production complète, du script à la postproduction."
-    },
-    "real.c2.titre": { en: "Case study — Digital", fr: "Étude de cas — Digital" },
-    "real.c2.desc": {
-      en: "A web platform with continuous, automated delivery.",
-      fr: "Une plateforme web livrée en continu, de façon automatisée."
-    },
-    "real.c3.titre": { en: "Case study — Marketing", fr: "Étude de cas — Marketing" },
-    "real.c3.desc": {
-      en: "A measurable social media and SEO campaign.",
-      fr: "Une campagne réseaux sociaux et SEO aux résultats mesurables."
-    },
 
     "clients.kicker": { en: "References", fr: "Références" },
     "clients.titre": { en: "They put their trust in us", fr: "Ils nous ont fait confiance" },
@@ -139,6 +114,7 @@
       fr: "Racontez-nous votre idée — un membre de l'équipe vous répond sous 48 heures ouvrées."
     },
     "contact.tel": { en: "Prefer to talk?", fr: "Vous préférez de vive voix ?" },
+    "contact.wa": { en: "Or chat with us on", fr: "Ou écrivez-nous sur" },
     "form.hint": { en: "All fields are required.", fr: "Tous les champs sont obligatoires." },
     "form.nom": { en: "Full name", fr: "Nom complet" },
     "form.email": { en: "Email address", fr: "Adresse e-mail" },
@@ -186,7 +162,6 @@
     "footer.accueil": { en: "Home", fr: "Accueil" },
     "footer.services": { en: "Services", fr: "Services" },
     "footer.apropos": { en: "About", fr: "À propos" },
-    "footer.realisations": { en: "Our work", fr: "Réalisations" },
     "footer.contact": { en: "Contact", fr: "Contact" },
     "footer.legal": {
       en: "© 2026 Sahara Creative World. All rights reserved.",
