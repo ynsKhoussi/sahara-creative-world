@@ -13,6 +13,7 @@
   <link rel="canonical" href="https://ynskhoussi.github.io/sahara-creative-world/">
   <link rel="alternate" hreflang="en" href="https://ynskhoussi.github.io/sahara-creative-world/">
   <link rel="alternate" hreflang="fr" href="https://ynskhoussi.github.io/sahara-creative-world/?lang=fr">
+  <link rel="alternate" hreflang="es" href="https://ynskhoussi.github.io/sahara-creative-world/?lang=es">
   <link rel="alternate" hreflang="x-default" href="https://ynskhoussi.github.io/sahara-creative-world/">
 
   <!-- Données structurées schema.org (invisibles, indépendantes du rendu) -->
@@ -35,7 +36,7 @@
       "addressRegion": "Souss-Massa",
       "addressCountry": "MA"
     },
-    "knowsLanguage": ["fr", "en"],
+    "knowsLanguage": ["fr", "en", "es"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Services",
@@ -54,7 +55,7 @@
   <!-- Le paramètre ?v= force le navigateur à recharger le CSS/JS quand ils
        changent (sinon le cache GitHub Pages peut servir un HTML neuf avec un
        CSS périmé). L'incrémenter à chaque modification de ces fichiers. -->
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -66,10 +67,15 @@
       <a class="nav-brand" href="#haut">
         <img src="assets/logo/scw-logo-mark.png" alt="Sahara Creative World — back to home" data-i18n-alt="nav.logoAlt" width="52" height="52">
       </a>
-      <!-- Language toggle: hidden without JS (it would be inert), shown by html.js.
-           Its visible text names the language it switches TO; aria-label and lang
-           attribute are kept in that target language (WCAG 2.5.3, 3.1.2). -->
-      <button class="lang-toggle" type="button" aria-label="Passer en français" lang="fr">FR</button>
+      <!-- Language picker: hidden without JS (it would be inert), shown by html.js.
+           Native <select> = keyboard/AT support for free; each option is written
+           in its own language and carries the matching lang attribute (3.1.2). -->
+      <label class="visually-hidden" for="choix-langue" data-i18n="nav.langue">Language</label>
+      <select class="lang-select" id="choix-langue">
+        <option value="en" lang="en">English</option>
+        <option value="fr" lang="fr">Français</option>
+        <option value="es" lang="es">Español</option>
+      </select>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
         <span class="nav-toggle-bars" aria-hidden="true"></span>
         <span data-i18n="nav.menu">Menu</span>
@@ -363,6 +369,6 @@
     <p class="footer-legal" data-i18n="footer.legal">© 2026 Sahara Creative World. All rights reserved.</p>
   </footer>
 
-  <script src="script.js?v=6"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>

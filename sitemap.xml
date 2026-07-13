@@ -5,12 +5,21 @@
     <loc>https://ynskhoussi.github.io/sahara-creative-world/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ynskhoussi.github.io/sahara-creative-world/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://ynskhoussi.github.io/sahara-creative-world/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ynskhoussi.github.io/sahara-creative-world/?lang=es"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ynskhoussi.github.io/sahara-creative-world/"/>
   </url>
   <url>
     <loc>https://ynskhoussi.github.io/sahara-creative-world/?lang=fr</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ynskhoussi.github.io/sahara-creative-world/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://ynskhoussi.github.io/sahara-creative-world/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ynskhoussi.github.io/sahara-creative-world/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ynskhoussi.github.io/sahara-creative-world/"/>
+  </url>
+  <url>
+    <loc>https://ynskhoussi.github.io/sahara-creative-world/?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ynskhoussi.github.io/sahara-creative-world/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ynskhoussi.github.io/sahara-creative-world/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ynskhoussi.github.io/sahara-creative-world/?lang=es"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ynskhoussi.github.io/sahara-creative-world/"/>
   </url>
 </urlset>

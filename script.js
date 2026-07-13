@@ -19,167 +19,197 @@
   var I18N = {
     "meta.title": {
       en: "Sahara Creative World — Creative & Technology Agency in Agadir",
-      fr: "Sahara Creative World — Agence créative & technologique à Agadir"
+      fr: "Sahara Creative World — Agence créative & technologique à Agadir",
+      es: "Sahara Creative World — Agencia creativa y tecnológica en Agadir"
     },
     "meta.description": {
       en: "Sahara Creative World (SCW): a multidisciplinary agency in Agadir, Morocco. Audiovisual production, tech & digital and marketing.",
-      fr: "Sahara Creative World (SCW) : agence multidisciplinaire à Agadir, Maroc. Production audiovisuelle, tech & digital et marketing."
+      fr: "Sahara Creative World (SCW) : agence multidisciplinaire à Agadir, Maroc. Production audiovisuelle, tech & digital et marketing.",
+      es: "Sahara Creative World (SCW): una agencia multidisciplinar en Agadir, Marruecos. Producción audiovisual, tecnología y digital, y marketing."
     },
-    "skip": { en: "Skip to main content", fr: "Aller au contenu principal" },
-    "nav.label": { en: "Main navigation", fr: "Navigation principale" },
+    "skip": { en: "Skip to main content", fr: "Aller au contenu principal", es: "Ir al contenido principal" },
+    "nav.label": { en: "Main navigation", fr: "Navigation principale", es: "Navegación principal" },
+    "nav.langue": { en: "Language", fr: "Langue", es: "Idioma" },
     "nav.logoAlt": {
       en: "Sahara Creative World — back to home",
-      fr: "Sahara Creative World — retour à l'accueil"
+      fr: "Sahara Creative World — retour à l'accueil",
+      es: "Sahara Creative World — volver al inicio"
     },
-    "nav.menu": { en: "Menu", fr: "Menu" },
-    "nav.accueil": { en: "Home", fr: "Accueil" },
-    "nav.services": { en: "Services", fr: "Services" },
-    "nav.apropos": { en: "About", fr: "À propos" },
-    "nav.contact": { en: "Contact", fr: "Contact" },
+    "nav.menu": { en: "Menu", fr: "Menu", es: "Menú" },
+    "nav.accueil": { en: "Home", fr: "Accueil", es: "Inicio" },
+    "nav.services": { en: "Services", fr: "Services", es: "Servicios" },
+    "nav.apropos": { en: "About", fr: "À propos", es: "Nosotros" },
+    "nav.contact": { en: "Contact", fr: "Contact", es: "Contacto" },
 
     "hero.kicker": {
       en: "Creative & technology agency — Agadir, Morocco",
-      fr: "Agence créative & technologique — Agadir, Maroc"
+      fr: "Agence créative & technologique — Agadir, Maroc",
+      es: "Agencia creativa y tecnológica — Agadir, Marruecos"
     },
-    "hero.l1": { en: "Create.", fr: "Créer." },
-    "hero.l2": { en: "Produce.", fr: "Produire." },
-    "hero.l3": { en: "Amplify.", fr: "Faire rayonner." },
+    "hero.l1": { en: "Create.", fr: "Créer.", es: "Crear." },
+    "hero.l2": { en: "Produce.", fr: "Produire.", es: "Producir." },
+    "hero.l3": { en: "Amplify.", fr: "Faire rayonner.", es: "Brillar." },
     "hero.desc": {
       en: "From film sets to software, Sahara Creative World brings audiovisual production, technology and communication together under one roof.",
-      fr: "Du plateau de tournage au logiciel, Sahara Creative World réunit sous un même toit la production audiovisuelle, la technologie et la communication."
+      fr: "Du plateau de tournage au logiciel, Sahara Creative World réunit sous un même toit la production audiovisuelle, la technologie et la communication.",
+      es: "Del plató de rodaje al software, Sahara Creative World reúne bajo un mismo techo la producción audiovisual, la tecnología y la comunicación."
     },
-    "hero.cta1": { en: "Let's talk about your project", fr: "Discutons de votre projet" },
-    "hero.cta2": { en: "Explore our services", fr: "Découvrir nos services" },
+    "hero.cta1": { en: "Let's talk about your project", fr: "Discutons de votre projet", es: "Hablemos de su proyecto" },
+    "hero.cta2": { en: "Explore our services", fr: "Découvrir nos services", es: "Descubra nuestros servicios" },
 
-    "services.kicker": { en: "What we do", fr: "Ce que nous faisons" },
+    "services.kicker": { en: "What we do", fr: "Ce que nous faisons", es: "Qué hacemos" },
     "services.titre": {
       en: "Three divisions, one standard: excellence",
-      fr: "Trois pôles, une seule exigence : l'excellence"
+      fr: "Trois pôles, une seule exigence : l'excellence",
+      es: "Tres divisiones, una sola exigencia: la excelencia"
     },
-    "services.av.titre": { en: "Audiovisual & production", fr: "Audiovisuel & production" },
+    "services.av.titre": { en: "Audiovisual & production", fr: "Audiovisuel & production", es: "Audiovisual y producción" },
     "services.av.desc": {
       en: "Film, VR/AR, motion design, podcast, post-production — stories crafted for the screen, every screen.",
-      fr: "Cinéma, VR/AR, motion design, podcast, postproduction — des histoires taillées pour l'écran, tous les écrans."
+      fr: "Cinéma, VR/AR, motion design, podcast, postproduction — des histoires taillées pour l'écran, tous les écrans.",
+      es: "Cine, VR/AR, motion design, pódcast, posproducción — historias hechas para la pantalla, todas las pantallas."
     },
-    "services.mkt.titre": { en: "Marketing & communication", fr: "Marketing & communication" },
+    "services.mkt.titre": { en: "Marketing & communication", fr: "Marketing & communication", es: "Marketing y comunicación" },
     "services.mkt.desc": {
       en: "SEO/SEA, social media, influencer marketing — visibility you can measure.",
-      fr: "SEO/SEA, réseaux sociaux, marketing d'influence — une visibilité qui se mesure."
+      fr: "SEO/SEA, réseaux sociaux, marketing d'influence — une visibilité qui se mesure.",
+      es: "SEO/SEA, redes sociales, marketing de influencia — una visibilidad que se puede medir."
     },
-    "services.tech.titre": { en: "Tech & digital", fr: "Tech & digital" },
+    "services.tech.titre": { en: "Tech & digital", fr: "Tech & digital", es: "Tecnología y digital" },
     "services.tech.desc": {
       en: "Software development, CI/CD, artificial intelligence and WCAG 2.2 accessibility audits — robust products, accessible to everyone.",
-      fr: "Développement logiciel, CI/CD, intelligence artificielle et audits d'accessibilité WCAG 2.2 — des produits robustes, accessibles à tous."
+      fr: "Développement logiciel, CI/CD, intelligence artificielle et audits d'accessibilité WCAG 2.2 — des produits robustes, accessibles à tous.",
+      es: "Desarrollo de software, CI/CD, inteligencia artificial y auditorías de accesibilidad WCAG 2.2 — productos robustos, accesibles para todos."
     },
 
-    "apropos.kicker": { en: "About us", fr: "À propos" },
-    "apropos.titre": { en: "Who are we?", fr: "Qui sommes-nous ?" },
+    "apropos.kicker": { en: "About us", fr: "À propos", es: "Nosotros" },
+    "apropos.titre": { en: "Who are we?", fr: "Qui sommes-nous ?", es: "¿Quiénes somos?" },
     "apropos.p1": {
       en: "SAHARA CREATIVE WORLD is a creative and technology company that supports businesses, institutions and organisations in designing innovative, accessible and high-performing digital experiences.",
-      fr: "SAHARA CREATIVE WORLD est une entreprise créative et technologique qui accompagne les entreprises, les institutions et les organisations dans la conception d’expériences digitales innovantes, accessibles et performantes."
+      fr: "SAHARA CREATIVE WORLD est une entreprise créative et technologique qui accompagne les entreprises, les institutions et les organisations dans la conception d’expériences digitales innovantes, accessibles et performantes.",
+      es: "SAHARA CREATIVE WORLD es una empresa creativa y tecnológica que acompaña a empresas, instituciones y organizaciones en la concepción de experiencias digitales innovadoras, accesibles y de alto rendimiento."
     },
     "apropos.p2": {
       en: "We bring together creativity, technology and strategy to imagine solutions that strengthen brand identity and create real value for users. Our expertise covers audiovisual production, photography, motion design, 2D and 3D animation, visual effects (VFX), web and mobile development, artificial intelligence, immersive experiences (VR/AR), as well as branding and digital communication.",
-      fr: "Nous réunissons la créativité, la technologie et la stratégie pour imaginer des solutions qui renforcent l’identité des marques et créent une véritable valeur pour leurs utilisateurs. Notre expertise couvre la production audiovisuelle, la photographie, le motion design, l’animation 2D et 3D, les effets visuels (VFX), le développement web et mobile, l’intelligence artificielle, les expériences immersives (VR/AR) ainsi que le branding et la communication digitale."
+      fr: "Nous réunissons la créativité, la technologie et la stratégie pour imaginer des solutions qui renforcent l’identité des marques et créent une véritable valeur pour leurs utilisateurs. Notre expertise couvre la production audiovisuelle, la photographie, le motion design, l’animation 2D et 3D, les effets visuels (VFX), le développement web et mobile, l’intelligence artificielle, les expériences immersives (VR/AR) ainsi que le branding et la communication digitale.",
+      es: "Reunimos creatividad, tecnología y estrategia para imaginar soluciones que refuerzan la identidad de las marcas y crean un valor real para sus usuarios. Nuestra experiencia abarca la producción audiovisual, la fotografía, el motion design, la animación 2D y 3D, los efectos visuales (VFX), el desarrollo web y móvil, la inteligencia artificial, las experiencias inmersivas (VR/AR), así como el branding y la comunicación digital."
     },
     "apropos.p3": {
       en: "Because innovation only makes sense when everyone can use it, we build digital accessibility into our projects from the design phase onward. We develop websites and interfaces designed to offer an inclusive experience, in line with best practices and international accessibility standards — most notably the Web Content Accessibility Guidelines (WCAG). Our goal is to allow every user, whatever their abilities or the assistive technologies they rely on, to access content simply, intuitively and efficiently.",
-      fr: "Parce que l’innovation n’a de sens que lorsqu’elle est accessible à tous, nous intégrons l’accessibilité numérique dès la phase de conception de nos projets. Nous développons des sites web et des interfaces pensés pour offrir une expérience inclusive, conforme aux bonnes pratiques et aux standards internationaux d’accessibilité, notamment les recommandations WCAG (Web Content Accessibility Guidelines). Notre objectif est de permettre à chaque utilisateur, quelles que soient ses capacités ou les technologies d’assistance qu’il utilise, d’accéder aux contenus de manière simple, intuitive et efficace."
+      fr: "Parce que l’innovation n’a de sens que lorsqu’elle est accessible à tous, nous intégrons l’accessibilité numérique dès la phase de conception de nos projets. Nous développons des sites web et des interfaces pensés pour offrir une expérience inclusive, conforme aux bonnes pratiques et aux standards internationaux d’accessibilité, notamment les recommandations WCAG (Web Content Accessibility Guidelines). Notre objectif est de permettre à chaque utilisateur, quelles que soient ses capacités ou les technologies d’assistance qu’il utilise, d’accéder aux contenus de manière simple, intuitive et efficace.",
+      es: "Porque la innovación solo tiene sentido cuando es accesible para todos, integramos la accesibilidad digital desde la fase de diseño de nuestros proyectos. Desarrollamos sitios web e interfaces pensados para ofrecer una experiencia inclusiva, conforme a las buenas prácticas y a los estándares internacionales de accesibilidad, en particular las pautas WCAG (Web Content Accessibility Guidelines). Nuestro objetivo es permitir que cada usuario, sean cuales sean sus capacidades o las tecnologías de asistencia que utilice, acceda a los contenidos de forma sencilla, intuitiva y eficaz."
     },
     "apropos.p4": {
       en: "Our approach rests on a balance between aesthetics, performance, innovation and user experience. Every project is tailor-made to meet our clients’ goals while guaranteeing quality, security, scalability and compliance with digital best practices.",
-      fr: "Notre approche repose sur un équilibre entre esthétique, performance, innovation et expérience utilisateur. Chaque projet est conçu sur mesure afin de répondre aux objectifs de nos clients tout en garantissant qualité, sécurité, évolutivité et conformité aux meilleures pratiques du numérique."
+      fr: "Notre approche repose sur un équilibre entre esthétique, performance, innovation et expérience utilisateur. Chaque projet est conçu sur mesure afin de répondre aux objectifs de nos clients tout en garantissant qualité, sécurité, évolutivité et conformité aux meilleures pratiques du numérique.",
+      es: "Nuestro enfoque se basa en un equilibrio entre estética, rendimiento, innovación y experiencia de usuario. Cada proyecto se diseña a medida para responder a los objetivos de nuestros clientes, garantizando calidad, seguridad, escalabilidad y conformidad con las mejores prácticas digitales."
     },
     "apropos.p5": {
       en: "At SAHARA CREATIVE WORLD, we don’t just create content or platforms. We design experiences that inspire, connect people and make digital more accessible, smarter and more human.",
-      fr: "Chez SAHARA CREATIVE WORLD, nous ne nous contentons pas de créer des contenus ou des plateformes. Nous concevons des expériences qui inspirent, connectent les personnes et rendent le numérique plus accessible, plus intelligent et plus humain."
+      fr: "Chez SAHARA CREATIVE WORLD, nous ne nous contentons pas de créer des contenus ou des plateformes. Nous concevons des expériences qui inspirent, connectent les personnes et rendent le numérique plus accessible, plus intelligent et plus humain.",
+      es: "En SAHARA CREATIVE WORLD no nos limitamos a crear contenidos o plataformas. Diseñamos experiencias que inspiran, conectan a las personas y hacen lo digital más accesible, más inteligente y más humano."
     },
     "apropos.p6": {
       en: "Our mission is to turn ideas into creative, innovative and accessible solutions with a lasting impact, in Morocco and internationally.",
-      fr: "Notre mission est de transformer les idées en solutions créatives, innovantes et accessibles, capables d’avoir un impact durable au Maroc comme à l’international."
+      fr: "Notre mission est de transformer les idées en solutions créatives, innovantes et accessibles, capables d’avoir un impact durable au Maroc comme à l’international.",
+      es: "Nuestra misión es transformar las ideas en soluciones creativas, innovadoras y accesibles, capaces de generar un impacto duradero en Marruecos y en el mundo."
     },
     "apropos.imgAlt": {
       en: "Low-angle view of modern office towers against a blue sky, a symbol of international ambition.",
-      fr: "Contre-plongée sur des tours de bureaux modernes se détachant sur un ciel bleu, symbole d'ambition internationale."
+      fr: "Contre-plongée sur des tours de bureaux modernes se détachant sur un ciel bleu, symbole d'ambition internationale.",
+      es: "Vista en contrapicado de modernas torres de oficinas contra un cielo azul, símbolo de ambición internacional."
     },
 
 
-    "clients.kicker": { en: "References", fr: "Références" },
-    "clients.titre": { en: "They put their trust in us", fr: "Ils nous ont fait confiance" },
+    "clients.kicker": { en: "References", fr: "Références", es: "Referencias" },
+    "clients.titre": { en: "They put their trust in us", fr: "Ils nous ont fait confiance", es: "Confiaron en nosotros" },
 
-    "contact.kicker": { en: "Let's talk", fr: "Parlons-en" },
-    "contact.titre": { en: "Have a project in mind?", fr: "Un projet en tête ?" },
+    "contact.kicker": { en: "Let's talk", fr: "Parlons-en", es: "Hablemos" },
+    "contact.titre": { en: "Have a project in mind?", fr: "Un projet en tête ?", es: "¿Tiene un proyecto en mente?" },
     "contact.desc": {
       en: "Tell us your idea — a member of the team will get back to you within 48 business hours.",
-      fr: "Racontez-nous votre idée — un membre de l'équipe vous répond sous 48 heures ouvrées."
+      fr: "Racontez-nous votre idée — un membre de l'équipe vous répond sous 48 heures ouvrées.",
+      es: "Cuéntenos su idea — un miembro del equipo le responderá en un plazo de 48 horas laborables."
     },
-    "contact.tel": { en: "Prefer to talk?", fr: "Vous préférez de vive voix ?" },
-    "contact.wa": { en: "Or chat with us on", fr: "Ou écrivez-nous sur" },
+    "contact.tel": { en: "Prefer to talk?", fr: "Vous préférez de vive voix ?", es: "¿Prefiere hablar?" },
+    "contact.wa": { en: "Or chat with us on", fr: "Ou écrivez-nous sur", es: "O escríbanos por" },
     "form.hint": {
       en: "All fields are required, unless marked optional.",
-      fr: "Tous les champs sont obligatoires, sauf mention contraire."
+      fr: "Tous les champs sont obligatoires, sauf mention contraire.",
+      es: "Todos los campos son obligatorios, salvo indicación contraria."
     },
-    "form.tel": { en: "Phone number (optional)", fr: "Téléphone (facultatif)" },
-    "form.indicatif": { en: "Country code", fr: "Indicatif pays" },
-    "form.nom": { en: "Full name", fr: "Nom complet" },
-    "form.email": { en: "Email address", fr: "Adresse e-mail" },
-    "form.message": { en: "Your message", fr: "Votre message" },
-    "form.envoyer": { en: "Send message", fr: "Envoyer le message" },
+    "form.tel": { en: "Phone number (optional)", fr: "Téléphone (facultatif)", es: "Teléfono (opcional)" },
+    "form.indicatif": { en: "Country code", fr: "Indicatif pays", es: "Prefijo del país" },
+    "form.nom": { en: "Full name", fr: "Nom complet", es: "Nombre completo" },
+    "form.email": { en: "Email address", fr: "Adresse e-mail", es: "Dirección de correo electrónico" },
+    "form.message": { en: "Your message", fr: "Votre message", es: "Su mensaje" },
+    "form.envoyer": { en: "Send message", fr: "Envoyer le message", es: "Enviar el mensaje" },
 
     /* Errors are stored as keys so an already-displayed error re-renders in
        the right language when the user switches (WCAG 3.3.1/3.3.3). */
     "erreur.nom.vide": {
       en: "Error: please enter your name.",
-      fr: "Erreur : veuillez indiquer votre nom."
+      fr: "Erreur : veuillez indiquer votre nom.",
+      es: "Error: por favor, indique su nombre."
     },
     "erreur.email.vide": {
       en: "Error: please enter your email address.",
-      fr: "Erreur : veuillez indiquer votre adresse e-mail."
+      fr: "Erreur : veuillez indiquer votre adresse e-mail.",
+      es: "Error: por favor, indique su dirección de correo electrónico."
     },
     "erreur.email.invalide": {
       en: "Error: this email address looks incomplete (example: name@domain.com).",
-      fr: "Erreur : l'adresse e-mail semble incomplète (exemple : nom@domaine.com)."
+      fr: "Erreur : l'adresse e-mail semble incomplète (exemple : nom@domaine.com).",
+      es: "Error: la dirección de correo parece incompleta (ejemplo: nombre@dominio.com)."
     },
     "erreur.message.vide": {
       en: "Error: please write your message.",
-      fr: "Erreur : veuillez écrire votre message."
+      fr: "Erreur : veuillez écrire votre message.",
+      es: "Error: por favor, escriba su mensaje."
     },
     "erreur.tel.invalide": {
       en: "Error: this phone number looks invalid — use digits only (example: 620035424).",
-      fr: "Erreur : ce numéro de téléphone semble invalide — chiffres uniquement (exemple : 620035424)."
+      fr: "Erreur : ce numéro de téléphone semble invalide — chiffres uniquement (exemple : 620035424).",
+      es: "Error: este número de teléfono parece inválido — solo cifras (ejemplo: 620035424)."
     },
     "statut.envoi": {
       en: "Sending your message…",
-      fr: "Envoi de votre message…"
+      fr: "Envoi de votre message…",
+      es: "Enviando su mensaje…"
     },
     "statut.erreur": {
       en: "Error: your message could not be sent. Please try again, or write to us directly at saharacreativeworld@gmail.com.",
-      fr: "Erreur : votre message n'a pas pu être envoyé. Réessayez, ou écrivez-nous directement à saharacreativeworld@gmail.com."
+      fr: "Erreur : votre message n'a pas pu être envoyé. Réessayez, ou écrivez-nous directement à saharacreativeworld@gmail.com.",
+      es: "Error: su mensaje no se ha podido enviar. Inténtelo de nuevo o escríbanos directamente a saharacreativeworld@gmail.com."
     },
     "statut.succes": {
       en: "Thank you! Your message has been received. We will reply within 48 business hours.",
-      fr: "Merci ! Votre message a bien été enregistré. Nous vous répondrons sous 48 heures ouvrées."
+      fr: "Merci ! Votre message a bien été enregistré. Nous vous répondrons sous 48 heures ouvrées.",
+      es: "¡Gracias! Su mensaje ha sido recibido. Le responderemos en un plazo de 48 horas laborables."
     },
 
     "footer.desc": {
       en: "A multidisciplinary creative and technology agency.",
-      fr: "Agence créative et technologique multidisciplinaire."
+      fr: "Agence créative et technologique multidisciplinaire.",
+      es: "Agencia creativa y tecnológica multidisciplinar."
     },
-    "footer.coordonnees": { en: "Contact details", fr: "Coordonnées" },
-    "footer.ville": { en: "Agadir, Morocco", fr: "Agadir, Maroc" },
-    "footer.navigation": { en: "Navigation", fr: "Navigation" },
-    "footer.accueil": { en: "Home", fr: "Accueil" },
-    "footer.services": { en: "Services", fr: "Services" },
-    "footer.apropos": { en: "About", fr: "À propos" },
-    "footer.contact": { en: "Contact", fr: "Contact" },
+    "footer.coordonnees": { en: "Contact details", fr: "Coordonnées", es: "Datos de contacto" },
+    "footer.ville": { en: "Agadir, Morocco", fr: "Agadir, Maroc", es: "Agadir, Marruecos" },
+    "footer.navigation": { en: "Navigation", fr: "Navigation", es: "Navegación" },
+    "footer.accueil": { en: "Home", fr: "Accueil", es: "Inicio" },
+    "footer.services": { en: "Services", fr: "Services", es: "Servicios" },
+    "footer.apropos": { en: "About", fr: "À propos", es: "Nosotros" },
+    "footer.contact": { en: "Contact", fr: "Contact", es: "Contacto" },
     "footer.legal": {
       en: "© 2026 Sahara Creative World. All rights reserved.",
-      fr: "© 2026 Sahara Creative World. Tous droits réservés."
+      fr: "© 2026 Sahara Creative World. Tous droits réservés.",
+      es: "© 2026 Sahara Creative World. Todos los derechos reservados."
     }
   };
 
+  var LANGUES = ["en", "fr", "es"];
   var langueActive = "en";
-  var langToggle = document.querySelector(".lang-toggle");
+  var langSelect = document.querySelector(".lang-select");
 
   function t(cle) {
     return (I18N[cle] && I18N[cle][langueActive]) || "";
@@ -195,18 +225,18 @@
     var meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", t("meta.description"));
 
-    /* SEO : chaque état de langue se canonise lui-même (?lang=fr pour le
-       français) et l'URL reste partageable. replaceState ne déplace ni le
-       focus ni le défilement. */
+    /* SEO : chaque état de langue se canonise lui-même (?lang=fr / ?lang=es)
+       et l'URL reste partageable. replaceState ne déplace ni le focus ni le
+       défilement. */
     var canonique = document.querySelector('link[rel="canonical"]');
     if (canonique) {
       var base = canonique.href.split("?")[0];
-      canonique.href = langue === "fr" ? base + "?lang=fr" : base;
+      canonique.href = langue === "en" ? base : base + "?lang=" + langue;
     }
     try {
       var url = new URL(window.location.href);
       var actuel = url.searchParams.get("lang");
-      var voulu = langue === "fr" ? "fr" : null;
+      var voulu = langue === "en" ? null : langue;
       if (actuel !== voulu) {
         if (voulu) { url.searchParams.set("lang", voulu); }
         else { url.searchParams.delete("lang"); }
@@ -224,19 +254,9 @@
       el.setAttribute("alt", t(el.getAttribute("data-i18n-alt")));
     });
 
-    /* The toggle offers the OTHER language; its accessible name and lang
-       attribute are in that target language so screen readers pronounce it
-       correctly. The visible text ("FR"/"EN") appears in the accessible
-       name (WCAG 2.5.3 Label in Name). */
-    if (langue === "en") {
-      langToggle.textContent = "FR";
-      langToggle.setAttribute("aria-label", "Passer en français — FR");
-      langToggle.setAttribute("lang", "fr");
-    } else {
-      langToggle.textContent = "EN";
-      langToggle.setAttribute("aria-label", "Switch to English — EN");
-      langToggle.setAttribute("lang", "en");
-    }
+    /* Le sélecteur reflète la langue affichée ; ses options restent écrites
+       chacune dans sa propre langue (English / Français / Español). */
+    if (langSelect.value !== langue) langSelect.value = langue;
 
     /* Noms de pays de l'indicatif téléphonique localisés dans la langue
        affichée (Intl.DisplayNames) ; le libellé anglais statique sert de
@@ -491,23 +511,25 @@
     });
   });
 
-  /* ---------- Language init & toggle ---------- */
+  /* ---------- Language init & picker ---------- */
 
-  langToggle.addEventListener("click", function () {
-    appliquerLangue(langueActive === "en" ? "fr" : "en");
-    /* Focus stays on this button — no focus management needed because no
-       node was added, removed or moved. */
+  langSelect.addEventListener("change", function () {
+    appliquerLangue(this.value);
+    /* Focus stays on the select — no focus management needed because no
+       node is added, removed or moved. */
   });
 
-  /* Priorité : paramètre d'URL (?lang=fr — utilisé par les moteurs via les
-     annotations hreflang), puis préférence enregistrée, puis anglais. */
+  /* Priorité : paramètre d'URL (?lang=fr / ?lang=es — utilisé par les
+     moteurs via les annotations hreflang), puis préférence enregistrée,
+     puis anglais. */
   var languePreferee = "en";
   try {
     var langUrl = new URL(window.location.href).searchParams.get("lang");
-    if (langUrl === "fr" || langUrl === "en") {
+    var langMemo = localStorage.getItem("scw-langue");
+    if (LANGUES.indexOf(langUrl) !== -1) {
       languePreferee = langUrl;
-    } else if (localStorage.getItem("scw-langue") === "fr") {
-      languePreferee = "fr";
+    } else if (LANGUES.indexOf(langMemo) !== -1) {
+      languePreferee = langMemo;
     }
   } catch (e) { /* stockage ou API indisponible */ }
 

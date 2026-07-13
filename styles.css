@@ -131,32 +131,35 @@ section, [id] { scroll-margin-top: 6rem; }
   border-radius: 6px;
 }
 
-/* Sélecteur de langue : masqué sans JS (il serait inopérant) */
-.lang-toggle { display: none; }
+/* Sélecteur de langue : masqué sans JS (il serait inopérant).
+   Flèche personnalisée (or) avec marge intérieure confortable. */
+.lang-select { display: none; }
 
-html.js .lang-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+html.js .lang-select {
+  display: inline-block;
   margin-left: auto;
-  min-width: 44px;
   min-height: 44px;
-  padding: 0.5rem 0.85rem;
-  background: transparent;
+  padding: 0.5rem 2.3rem 0.5rem 0.85rem;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23D4A94C' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
   color: var(--or-vif);
   border: 2px solid var(--or-vif);
   border-radius: 6px;
   font-family: inherit;
   font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-weight: 600;
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.lang-toggle:hover {
-  background: var(--or-vif);
-  color: var(--noir);
-}
+.lang-select:hover { border-color: var(--or-clair); color: var(--or-clair); }
+
+/* Les listes déroulantes natives s'ouvrent sur fond clair : le texte des
+   options doit rester sombre pour y être lisible. */
+.lang-select option { color: var(--noir-doux); }
 
 .nav-links {
   list-style: none;
@@ -560,6 +563,17 @@ html:not(.js) .nav-links { margin-left: auto; }
   outline-offset: 1px;
 }
 
+/* Flèche personnalisée du <select> : la native colle au bord ; celle-ci
+   garde une marge intérieure confortable (demande client) */
+.form-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%231E1B14' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  padding-right: 2.75rem;
+}
+
 /* Indicatif pays + numéro : l'indicatif garde une largeur fixe,
    le numéro prend le reste ; passage sur deux lignes si trop étroit */
 .tel-groupe {
@@ -569,7 +583,7 @@ html:not(.js) .nav-links { margin-left: auto; }
 }
 
 .tel-groupe select {
-  flex: 0 1 11rem;
+  flex: 0 1 13.5rem;
   min-width: 8rem;
 }
 
