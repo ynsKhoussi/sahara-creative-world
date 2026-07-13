@@ -55,7 +55,7 @@
   <!-- Le paramètre ?v= force le navigateur à recharger le CSS/JS quand ils
        changent (sinon le cache GitHub Pages peut servir un HTML neuf avec un
        CSS périmé). L'incrémenter à chaque modification de ces fichiers. -->
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 
@@ -69,9 +69,10 @@
       </a>
       <!-- Language picker: hidden without JS (it would be inert), shown by html.js.
            Native <select> = keyboard/AT support for free; each option is written
-           in its own language and carries the matching lang attribute (3.1.2). -->
-      <label class="visually-hidden" for="choix-langue" data-i18n="nav.langue">Language</label>
-      <select class="lang-select" id="choix-langue">
+           in its own language and carries the matching lang attribute (3.1.2).
+           Name via aria-label (not a clipped <label>) : rien de rendu, donc
+           rien que WAVE puisse évaluer en contraste. -->
+      <select class="lang-select" id="choix-langue" aria-label="Language" data-i18n-aria-label="nav.langue">
         <option value="en" lang="en">English</option>
         <option value="fr" lang="fr">Français</option>
         <option value="es" lang="es">Español</option>
@@ -249,8 +250,7 @@
           <div class="form-field">
             <label for="champ-tel" data-i18n="form.tel">Phone number (optional)</label>
             <div class="tel-groupe">
-              <label class="visually-hidden" for="champ-indicatif" data-i18n="form.indicatif">Country code</label>
-              <select id="champ-indicatif" name="indicatif" autocomplete="tel-country-code">
+              <select id="champ-indicatif" name="indicatif" autocomplete="tel-country-code" aria-label="Country code" data-i18n-aria-label="form.indicatif">
                 <option value="+212" data-pays="MA" selected>Morocco (+212)</option>
                 <option value="+213" data-pays="DZ">Algeria (+213)</option>
                 <option value="+54" data-pays="AR">Argentina (+54)</option>
